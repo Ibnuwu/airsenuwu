@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="100%" height="100%">
+  <!-- Photography - Silence of the Mist -->
+  <rect width="300" height="400" fill="#0f0f0f" />
+  <defs>
+    <linearGradient id="mistGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <!-- Minimalist Mountain Range / Fog silhouette -->
+  <path d="M -50 320 Q 80 280 180 340 T 350 310 L 350 400 L -50 400 Z" fill="#181818" />
+  <path d="M -50 350 Q 120 320 220 370 T 350 340 L 350 400 L -50 400 Z" fill="#1e1e1e" />
+  <!-- Mist Overlay -->
+  <rect width="300" height="400" fill="url(#mistGrad)" />
+  <!-- Single distant star/moon -->
+  <circle cx="150" cy="120" r="1.5" fill="#f5f5f5" opacity="0.8" />
+  
+  <text x="20" y="35" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#666666" letter-spacing="1">PHOTOGRAPHY</text>
+  <text x="20" y="375" font-family="'Inter', sans-serif" font-size="11" fill="#f5f5f5">Silence of the Mist</text>
+</svg>

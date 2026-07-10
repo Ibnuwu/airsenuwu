@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>airseen1 — Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of airseen1 (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta property="og:title" content="airseen1 — Personal Portfolio">
+  <meta property="og:description" content="Personal portfolio of airseen1 (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ibnuwu.github.io/airsenuwu/">
+  <meta property="og:image" content="https://ibnuwu.github.io/airsenuwu/assets/images/og-image.png">
+  <meta property="og:site_name" content="airseen1">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@ibnuwu">
+  <meta name="twitter:title" content="airseen1 — Personal Portfolio">
+  <meta name="twitter:description" content="Personal portfolio of airseen1 (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
+  <meta name="twitter:image" content="https://ibnuwu.github.io/airsenuwu/assets/images/og-image.png">
+
+  <!-- Favicon (Inline Minimal SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0a0a%22/><text y=%2265%22 x=%2225%22 font-family=%22sans-serif%22 font-size=%2250%22 font-weight=%22bold%22 fill=%22%23f5f5f5%22>a</text></svg>">
+
+  <!-- Google Fonts — Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- App Container -->
+  <div class="container flex flex-col min-h-screen">
+    
+    <!-- Header / Navigation Shell -->
+    <header class="w-full mt-8 mb-6 fade-in delay-1" id="main-header">
+      <!-- Nav will be finalized in tabs & components -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full">
+      <!-- Section: Hero (Phase 5) -->
+      <section id="hero" class="w-full py-6 flex flex-col items-center text-center fade-in delay-1">
+        
+        <!-- Avatar Wrapper -->
+        <div class="hero-avatar-wrapper mb-6 fade-in delay-1">
+          <img src="assets/images/profile/avatar.svg" alt="airseen1 Profile Picture" class="hero-avatar" width="112" height="112" decoding="async">
+        </div>
+
+        <!-- Heading Group -->
+        <div class="hero-meta mb-4 fade-in delay-2">
+          <h1 class="text-2xl fw-bold text-primary mb-1">airseen1</h1>
+          <span class="text-sm fw-medium text-tertiary">@ibnuwu</span>
+        </div>
+
+        <!-- Tagline & Bio -->
+        <p class="hero-tagline text-lg fw-semibold text-accent mb-3 fade-in delay-2">Developer & Creative Builder</p>
+        <p class="hero-bio text-sm text-secondary mb-8 fade-in delay-3" style="max-width: 480px;">
+          Crafting minimal, high-performance web experiences and digital interfaces. Focused on clean code and design aesthetics.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions flex gap-4 mb-8 fade-in delay-3">
+          <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+            <span>View Projects</span>
+            <i data-lucide="arrow-right" class="icon-sm" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:ibnuwu@example.com" class="btn btn-outline" id="btn-contact">
+            <span>Contact</span>
+            <i data-lucide="mail" class="icon-sm" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Social Media Icons Row -->
+        <div class="hero-socials flex gap-6 fade-in delay-4">
+          <a href="https://instagram.com/ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile" title="Instagram">
+            <i data-lucide="instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub">
+            <i data-lucide="github" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a href="https://x.com/ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X Profile" title="X (Twitter)">
+            <i data-lucide="twitter" aria-hidden="true"></i>
+            <span class="sr-only">X (Twitter)</span>
+          </a>
+          <a href="https://tiktok.com/@ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok Profile" title="TikTok">
+            <i data-lucide="video" aria-hidden="true"></i>
+            <span class="sr-only">TikTok</span>
+          </a>
+          <a href="https://pinterest.com/ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest Profile" title="Pinterest">
+            <i data-lucide="pin" aria-hidden="true"></i>
+            <span class="sr-only">Pinterest</span>
+          </a>
+          <a href="mailto:ibnuwu@example.com" class="social-link" aria-label="Kirim Email ke ibnuwu" title="Email">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+
+      </section>
+
+      <!-- Section: Navigation Tab Bar (Phase 6) -->
+      <section id="content-nav" class="w-full mt-8">
+        <div class="tabs-container fade-in delay-4" role="tablist" aria-label="Portfolio Sections">
+          <div class="tabs-wrapper flex justify-center">
+            <button class="tab-btn active" data-tab="projects" aria-selected="true" role="tab" id="tab-projects" aria-controls="panel-projects">
+              Projects
+            </button>
+            <button class="tab-btn" data-tab="blog" aria-selected="false" role="tab" id="tab-blog" aria-controls="panel-blog">
+              Blog
+            </button>
+            <button class="tab-btn" data-tab="creative" aria-selected="false" role="tab" id="tab-creative" aria-controls="panel-creative">
+              Creative
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Dynamic Content Area (Phases 7, 8, 9) -->
+      <section id="tab-content" class="w-full mt-8" aria-live="polite">
+        
+        <!-- Tab Panel: Projects -->
+        <div id="panel-projects" class="tab-panel active fade-in" role="tabpanel" aria-labelledby="tab-projects">
+          
+          <div class="projects-section flex flex-col gap-8">
+            
+            <!-- Featured Project (Full-Width Card) -->
+            <div class="project-card featured-card card flex flex-col" id="featured-project">
+              <div class="project-thumbnail-wrapper">
+                <img src="assets/images/projects/project-featured.svg" alt="Airsenuwu Portfolio Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
+                <span class="project-status badge-completed">Featured</span>
+              </div>
+              <div class="project-content flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="project-category text-xs fw-semibold text-tertiary">Portfolio Web</span>
+                    <span class="pill">Completed</span>
+                  </div>
+                  <h3 class="project-title text-xl fw-bold text-primary mb-2">Airsenuwu Portfolio</h3>
+                  <p class="project-description text-sm text-secondary mb-4">
+                    Website portfolio pribadi modern, minimalis, dan sangat cepat yang dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.
+                  </p>
+                  <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
+                    <span class="pill">HTML5</span>
+                    <span class="pill">CSS3</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">Decap CMS</span>
+                  </div>
+                </div>
+                <div class="project-links flex gap-4">
+                  <a href="https://github.com/Ibnuwu/airsenuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository untuk Airsenuwu Portfolio">
+                    <i data-lucide="github" class="icon-sm" aria-hidden="true"></i>
+                    <span>Repository</span>
+                  </a>
+                  <a href="https://ibnuwu.github.io/airsenuwu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm-action" aria-label="Live Demo untuk Airsenuwu Portfolio">
+                    <i data-lucide="external-link" class="icon-sm" aria-hidden="true"></i>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Normal Projects Grid -->
+            <div class="projects-grid">
+              
+              <!-- Project 1 -->
+              <div class="project-card card flex flex-col">
+                <div class="project-thumbnail-wrapper">
+                  <img src="assets/images/projects/project-1.svg" alt="GitJournal Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
+                </div>
+                <div class="project-content flex flex-col justify-between flex-grow">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="project-category text-xs fw-semibold text-tertiary">Mobile App</span>
+                      <span class="pill status-active">Active</span>
+                    </div>
+                    <h3 class="project-title text-md fw-bold text-primary mb-2">GitJournal</h3>
+                    <p class="project-description text-xs text-secondary mb-4">
+                      Aplikasi pencatatan berbasis markdown minimalis yang tersinkronisasi otomatis dengan repository Git. Didesain untuk keamanan data pribadi penuh.
+                    </p>
+                    <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
+                      <span class="pill">Flutter</span>
+                      <span class="pill">Rust</span>
+                      <span class="pill">Git</span>
+                    </div>
+                  </div>
+                  <div class="project-links flex gap-3">
+                    <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository untuk GitJournal">
+                      <i data-lucide="github" class="icon-sm" aria-hidden="true"></i>
+                      <span>Repo</span>
+                    </a>
+                    <a href="#" class="btn btn-primary btn-sm-action disabled" aria-label="Live Demo tidak tersedia untuk GitJournal" tabindex="-1">
+                      <i data-lucide="external-link" class="icon-sm" aria-hidden="true"></i>
+                      <span>Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card card flex flex-col">
+                <div class="project-thumbnail-wrapper">
+                  <img src="assets/images/projects/project-2.svg" alt="ZenReader Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
+                </div>
+                <div class="project-content flex flex-col justify-between flex-grow">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="project-category text-xs fw-semibold text-tertiary">Web App</span>
+                      <span class="pill status-progress">In Progress</span>
+                    </div>
+                    <h3 class="project-title text-md fw-bold text-primary mb-2">ZenReader</h3>
+                    <p class="project-description text-xs text-secondary mb-4">
+                      Minimalist RSS aggregator and reader with zero algorithm bloat, local-first caching, and absolute content focus.
+                    </p>
+                    <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
+                      <span class="pill">React</span>
+                      <span class="pill">Go</span>
+                      <span class="pill">SQLite</span>
+                    </div>
+                  </div>
+                  <div class="project-links flex gap-3">
+                    <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository untuk ZenReader">
+                      <i data-lucide="github" class="icon-sm" aria-hidden="true"></i>
+                      <span>Repo</span>
+                    </a>
+                    <a href="https://ibnuwu.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm-action" aria-label="Live Demo untuk ZenReader">
+                      <i data-lucide="external-link" class="icon-sm" aria-hidden="true"></i>
+                      <span>Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Tab Panel: Blog -->
+        <div id="panel-blog" class="tab-panel hidden fade-in" role="tabpanel" aria-labelledby="tab-blog" aria-hidden="true">
+          
+          <div class="blog-section flex flex-col gap-6">
+            
+            <!-- Blog Item 1 -->
+            <article class="blog-item card">
+              <a href="#" class="blog-link flex flex-col justify-between h-full p-6">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span class="pill">Cerpen</span>
+                    <time class="blog-date text-xs text-tertiary" datetime="2026-06-14">14 Jun 2026</time>
+                  </div>
+                  <h3 class="blog-title text-md fw-bold text-primary mb-2">Misteri Jam Dinding Tua</h3>
+                  <p class="blog-excerpt text-xs text-secondary mb-4">
+                    Setiap malam jam itu berdentang tepat pada pukul 12, membawa kenangan aneh dari masa lalu yang tak pernah terjadi...
+                  </p>
+                </div>
+                <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
+                  <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
+                  <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
+                </div>
+              </a>
+            </article>
+
+            <!-- Blog Item 2 -->
+            <article class="blog-item card">
+              <a href="#" class="blog-link flex flex-col justify-between h-full p-6">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span class="pill">Tutorial</span>
+                    <time class="blog-date text-xs text-tertiary" datetime="2026-05-20">20 Mei 2026</time>
+                  </div>
+                  <h3 class="blog-title text-md fw-bold text-primary mb-2">Membangun Design System Minimalis dengan CSS Custom Properties</h3>
+                  <p class="blog-excerpt text-xs text-secondary mb-4">
+                    Panduan praktis merancang warna, tipografi, dan grid tokens yang tangguh, clean, dan mudah dipelihara menggunakan native CSS.
+                  </p>
+                </div>
+                <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
+                  <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
+                  <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
+                </div>
+              </a>
+            </article>
+
+            <!-- Blog Item 3 -->
+            <article class="blog-item card">
+              <a href="#" class="blog-link flex flex-col justify-between h-full p-6">
+                <div>
+                  <div class="flex items-center gap-3 mb-3">
+                    <span class="pill">Review</span>
+                    <time class="blog-date text-xs text-tertiary" datetime="2026-04-12">12 Apr 2026</time>
+                  </div>
+                  <h3 class="blog-title text-md fw-bold text-primary mb-2">Review Buku: Quiet — Kekuatan Introvert di Dunia yang Berisik</h3>
+                  <p class="blog-excerpt text-xs text-secondary mb-4">
+                    Catatan kritis dan ulasan mendalam mengenai karya Susan Cain tentang bagaimana kontribusi kaum tenang sering kali diremehkan.
+                  </p>
+                </div>
+                <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
+                  <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
+                  <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
+                </div>
+              </a>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- Tab Panel: Creative -->
+        <div id="panel-creative" class="tab-panel hidden fade-in" role="tabpanel" aria-labelledby="tab-creative" aria-hidden="true">
+          
+          <div class="creative-section flex flex-col gap-6">
+            
+            <!-- Category Filters -->
+            <div class="creative-filters flex flex-wrap gap-2 justify-center" role="group" aria-label="Filter Creative Works">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="photography">Photography</button>
+              <button class="filter-btn" data-filter="artwork">Artwork</button>
+              <button class="filter-btn" data-filter="design">Design</button>
+              <button class="filter-btn" data-filter="experiment">Eksperimen</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="creative-grid">
+              
+              <!-- Gallery Item 1 -->
+              <div class="creative-item card" data-category="photography">
+                <button class="gallery-trigger" aria-label="Lihat Silence of the Mist">
+                  <div class="creative-img-wrapper">
+                    <img src="assets/images/creative/creative-1.svg" alt="Silence of the Mist" class="creative-img" width="300" height="400" loading="lazy" decoding="async">
+                  </div>
+                  <div class="creative-meta p-4 flex justify-between items-center">
+                    <div>
+                      <span class="creative-category text-xs fw-semibold text-tertiary">Photography</span>
+                      <h4 class="creative-title text-sm fw-medium text-primary">Silence of the Mist</h4>
+                    </div>
+                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
+                  </div>
+                </button>
+              </div>
+
+              <!-- Gallery Item 2 -->
+              <div class="creative-item card" data-category="artwork">
+                <button class="gallery-trigger" aria-label="Lihat Neon Cyberpunk Sphere">
+                  <div class="creative-img-wrapper">
+                    <img src="assets/images/creative/creative-2.svg" alt="Neon Cyberpunk Sphere" class="creative-img" width="300" height="300" loading="lazy" decoding="async">
+                  </div>
+                  <div class="creative-meta p-4 flex justify-between items-center">
+                    <div>
+                      <span class="creative-category text-xs fw-semibold text-tertiary">Artwork</span>
+                      <h4 class="creative-title text-sm fw-medium text-primary">Neon Cyberpunk Sphere</h4>
+                    </div>
+                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
+                  </div>
+                </button>
+              </div>
+
+              <!-- Gallery Item 3 -->
+              <div class="creative-item card" data-category="design">
+                <button class="gallery-trigger" aria-label="Lihat Minimal Web Layout Concept">
+                  <div class="creative-img-wrapper">
+                    <img src="assets/images/creative/creative-3.svg" alt="Minimal Web Layout Concept" class="creative-img" width="300" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="creative-meta p-4 flex justify-between items-center">
+                    <div>
+                      <span class="creative-category text-xs fw-semibold text-tertiary">Design</span>
+                      <h4 class="creative-title text-sm fw-medium text-primary">Minimal Web Layout Concept</h4>
+                    </div>
+                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
+                  </div>
+                </button>
+              </div>
+
+              <!-- Gallery Item 4 -->
+              <div class="creative-item card" data-category="experiment">
+                <button class="gallery-trigger" aria-label="Lihat Generative Canvas Wireframe">
+                  <div class="creative-img-wrapper">
+                    <img src="assets/images/creative/creative-4.svg" alt="Generative Canvas Wireframe" class="creative-img" width="300" height="300" loading="lazy" decoding="async">
+                  </div>
+                  <div class="creative-meta p-4 flex justify-between items-center">
+                    <div>
+                      <span class="creative-category text-xs fw-semibold text-tertiary">Eksperimen</span>
+                      <h4 class="creative-title text-sm fw-medium text-primary">Generative Canvas Wireframe</h4>
+                    </div>
+                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer (Phase 14) -->
+    <footer class="w-full py-8 mt-12 border-t border-solid border-border text-center text-xs text-tertiary fade-in delay-5" id="main-footer">
+      <p>&copy; 2026 airseen1. Dibuat dengan presisi.</p>
+    </footer>
+
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox modal-hidden" role="dialog" aria-modal="true" aria-label="Galeri Gambar Zoom">
+    <button class="lightbox-close" aria-label="Tutup Galeri Zoom">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption text-sm text-secondary mt-4"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/tabs.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

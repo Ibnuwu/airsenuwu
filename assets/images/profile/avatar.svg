@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Background with deep dark gradient -->
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer circle border -->
+  <circle cx="50" cy="50" r="48" fill="url(#avatarGrad)" stroke="#2a2a2a" stroke-width="1.5"/>
+  
+  <!-- Inner premium elements: Abstract minimal wireframe layout representing code & creativity -->
+  <!-- Horizontal grid lines -->
+  <line x1="20" y1="40" x2="80" y2="40" stroke="#333333" stroke-width="0.5" />
+  <line x1="20" y1="50" x2="80" y2="50" stroke="#444444" stroke-width="0.5" />
+  <line x1="20" y1="60" x2="80" y2="60" stroke="#333333" stroke-width="0.5" />
+  
+  <!-- Glowing minimalist node -->
+  <circle cx="50" cy="50" r="10" fill="#222" stroke="#e0e0e0" stroke-width="1" />
+  <circle cx="50" cy="50" r="4" fill="#f5f5f5" />
+  
+  <!-- Cyber-like connection paths -->
+  <path d="M 30 50 L 40 50" stroke="#a0a0a0" stroke-width="1" stroke-linecap="round" />
+  <path d="M 70 50 L 60 50" stroke="#a0a0a0" stroke-width="1" stroke-linecap="round" />
+  <path d="M 50 30 L 50 40" stroke="#a0a0a0" stroke-width="1" stroke-linecap="round" />
+  
+  <!-- Outer decorative circles -->
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#222" stroke-dasharray="2 4" stroke-width="1" />
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#161616" stroke-width="0.5" />
+</svg>

@@ -1,0 +1,53 @@
+backend:
+  name: github
+  repo: Ibnuwu/airsenuwu
+  branch: main
+
+# Local development backend settings (optional, for testing with npx decap-cms-proxy-server)
+local_backend: true
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  # Collection 1: Projects
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "string", default: "Web App" }
+      - { label: "Status", name: "status", widget: "select", options: ["Active", "Completed", "In Progress"], default: "Completed" }
+      - { label: "Featured Project", name: "featured", widget: "boolean", default: false }
+      - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Tech Stack", name: "tech_stack", widget: "list", field: { name: "tag", widget: "string" } }
+      - { label: "GitHub URL", name: "github_url", widget: "string", required: false }
+      - { label: "Demo URL", name: "demo_url", widget: "string", required: false }
+
+  # Collection 2: Blog Posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Cerpen", "Artikel", "Catatan", "Tutorial", "Review"], default: "Artikel" }
+      - { label: "Excerpt / Summary", name: "excerpt", widget: "text" }
+      - { label: "Body Content", name: "body", widget: "markdown" }
+
+  # Collection 3: Creative Work
+  - name: "creative"
+    label: "Creative Works"
+    folder: "content/creative"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Photography", "Artwork", "Design", "Experiment"], default: "Photography" }
+      - { label: "Image / Media", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text", required: false }

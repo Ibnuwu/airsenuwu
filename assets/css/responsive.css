@@ -1,0 +1,78 @@
+/* ==========================================================
+   responsive.css — Media Queries (Mobile First)
+   ========================================================== */
+
+/* --- Medium Devices & Tablets (768px and up) --- */
+@media (min-width: 768px) {
+  /* Design Tokens Scale Adjustments */
+  :root {
+    --container-padding: var(--space-8);
+  }
+
+  /* Hero Section scaling */
+  #hero {
+    padding-block: var(--space-10);
+  }
+
+  .hero-avatar-wrapper {
+    width: 120px;
+    height: 120px;
+    margin-bottom: var(--space-8);
+  }
+
+  .hero-meta h1 {
+    font-size: var(--fs-3xl);
+  }
+
+  .hero-tagline {
+    font-size: var(--fs-xl);
+  }
+
+  .hero-bio {
+    font-size: var(--fs-base);
+  }
+
+  /* Projects Layout */
+  .featured-card {
+    flex-direction: row !important;
+    min-height: 280px;
+  }
+
+  .featured-card .project-thumbnail-wrapper {
+    width: 45%;
+    height: auto;
+    aspect-ratio: auto;
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+
+  .featured-card .project-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-6);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  /* Creative Section */
+  .creative-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+/* --- Large Devices & Desktops (1024px and up) --- */
+@media (min-width: 1024px) {
+  :root {
+    --container-max: 768px; /* Maintain standard narrow minimal content focus */
+  }
+  
+  #hero {
+    padding-block: var(--space-16);
+  }
+}
