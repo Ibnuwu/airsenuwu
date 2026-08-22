@@ -133,7 +133,7 @@
         <!-- Tab Panel: Projects -->
         <div id="panel-projects" class="tab-panel active fade-in" role="tabpanel" aria-labelledby="tab-projects">
           
-          <div class="projects-section flex flex-col gap-8">
+          <div class="projects-section flex flex-col gap-8" id="projects-container">
             
             <!-- Featured Project (Full-Width Card) -->
             <div class="project-card featured-card card flex flex-col" id="featured-project">
@@ -251,7 +251,7 @@
         <!-- Tab Panel: Blog -->
         <div id="panel-blog" class="tab-panel hidden fade-in" role="tabpanel" aria-labelledby="tab-blog" aria-hidden="true">
           
-          <div class="blog-section flex flex-col gap-6">
+          <div class="blog-section flex flex-col gap-6" id="blog-container">
             
             <!-- Blog Item 1 -->
             <article class="blog-item card">
@@ -332,7 +332,7 @@
             </div>
 
             <!-- Gallery Grid -->
-            <div class="creative-grid">
+            <div class="creative-grid" id="creative-container">
               
               <!-- Gallery Item 1 -->
               <div class="creative-item card" data-category="photography">
@@ -434,8 +434,29 @@
     </div>
   </div>
 
+  <!-- Detailed Reader Modal -->
+  <div id="reader-modal" class="reader-modal modal-hidden" role="dialog" aria-modal="true" aria-label="Pembaca Konten">
+    <div class="reader-modal-overlay"></div>
+    <div class="reader-modal-container">
+      <button class="reader-modal-close" aria-label="Tutup Konten">&times;</button>
+      <div class="reader-modal-body">
+        <div id="reader-hero-wrapper" class="reader-hero-wrapper">
+          <img id="reader-img" src="" alt="" class="reader-img">
+        </div>
+        <div class="reader-meta">
+          <span id="reader-category" class="pill"></span>
+          <span id="reader-date" class="reader-date-text"></span>
+        </div>
+        <h2 id="reader-title" class="reader-title-text"></h2>
+        <hr class="reader-divider">
+        <div id="reader-content" class="reader-content markdown-body"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="assets/js/utils.js" defer></script>
   <script src="assets/js/tabs.js" defer></script>
   <script src="assets/js/app.js" defer></script>
