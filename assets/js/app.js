@@ -817,9 +817,76 @@ async function initContent() {
   setupCreativeFilters();
 }
 
+// --- Load Profile Settings from CMS ---
+async function loadProfileSettings() {
+  const PROFILE_CACHE_KEY = CACHE_KEY_PREFIX + 'profile';
+  
+  // Try cache first
+  const cached = localStorage.getItem(PROFILE_CACHE_KEY);
+  if (cached) {
+    try {
+      const parsed = JSON.parse(cached);
+      if (Date.now() - parsed.timestamp < CACHE_EXPIRY_MS) {
+        applyProfileSettings(parsed.data);
+        return;
+      }
+    } catch (e) {
+      console.warn('Failed to parse profile cache', e);
+    }
+  }
+
+  // Fetch from GitHub
+  try {
+    const url = `https://api.github.com/repos/${GITHUB_REPO}/contents/content/settings/profile.json`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Profile fetch: ${response.status}`);
+    const fileData = await response.json();
+    
+    // Decode base64 content
+    const content = JSON.parse(atob(fileData.content));
+    
+    // Cache it
+    try {
+      localStorage.setItem(PROFILE_CACHE_KEY, JSON.stringify({
+        timestamp: Date.now(),
+        data: content
+      }));
+    } catch (e) {
+      console.warn('Failed to cache profile', e);
+    }
+    
+    applyProfileSettings(content);
+  } catch (e) {
+    console.log('Using default profile settings (API unavailable)', e);
+    // Apply defaults (already in HTML, so no action needed)
+  }
+}
+
+function applyProfileSettings(profile) {
+  if (!profile) return;
+  
+  const avatarEl = document.getElementById('profile-avatar');
+  const nameEl = document.getElementById('profile-name');
+  const nicknameEl = document.getElementById('profile-nickname');
+  const quoteEl = document.getElementById('profile-quote');
+  const quoteSourceEl = document.getElementById('profile-quote-source');
+  
+  if (avatarEl && profile.avatar) {
+    // Handle both absolute and relative paths
+    const avatarSrc = profile.avatar.startsWith('/') 
+      ? profile.avatar.substring(1) 
+      : profile.avatar;
+    avatarEl.src = avatarSrc;
+  }
+  if (nameEl && profile.name) nameEl.textContent = profile.name;
+  if (nicknameEl && profile.nickname) nicknameEl.textContent = profile.nickname;
+  if (quoteEl && profile.quote) quoteEl.textContent = `"${profile.quote}"`;
+  if (quoteSourceEl && profile.quote_source) quoteSourceEl.textContent = `— ${profile.quote_source}`;
+}
+
 // --- Run Application ---
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('airseen1 premium portfolio initialized');
+  console.log('ibnuwu portfolio initialized');
   
   // Lucide SVG Icons initial compile
   if (typeof lucide !== 'undefined') {
@@ -829,6 +896,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup cursor glow background light
   setupCursorGlow();
 
+  // Load Profile from CMS settings
+  loadProfileSettings();
+
   // Load Content from Git/Local
   initContent();
 
@@ -836,3 +906,4 @@ document.addEventListener('DOMContentLoaded', () => {
   setupReaderModal();
   setupLightbox();
 });
+

@@ -42,31 +42,38 @@
   letter-spacing: -0.03em;
 }
 
-.hero-meta span {
-  font-size: var(--fs-xs);
+.hero-meta span,
+.hero-nickname {
+  font-size: var(--fs-sm);
   color: var(--text-tertiary);
   letter-spacing: 0.05em;
+  display: block;
 }
 
-.hero-tagline {
-  font-size: var(--fs-md);
-  font-weight: var(--fw-semibold);
-  letter-spacing: -0.01em;
-  color: var(--text-primary);
-}
-
-.hero-bio {
-  color: var(--text-secondary);
-  font-size: var(--fs-sm);
-  line-height: var(--lh-relaxed);
-  max-width: 460px;
+/* Quote / Bio blockquote */
+.hero-quote {
+  max-width: 400px;
   margin-inline: auto;
+  margin-bottom: var(--space-6);
+  text-align: center;
+  padding: 0;
+  border: none;
 }
 
-.hero-actions {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-4);
+.hero-quote p {
+  font-size: var(--fs-sm);
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+  letter-spacing: 0.01em;
+  margin-bottom: var(--space-1);
+}
+
+.hero-quote cite {
+  font-size: var(--fs-xs);
+  color: var(--text-tertiary);
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 /* --- Redesigned Social Links --- */
@@ -82,12 +89,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: var(--radius-full);
   border: 1px solid var(--border);
   background-color: rgba(255, 255, 255, 0.01);
   color: var(--text-secondary);
+  font-size: 1.125rem;
   transition: border-color var(--transition-normal),
               background-color var(--transition-normal),
               color var(--transition-normal),
@@ -106,7 +114,14 @@
   transform: translateY(0);
 }
 
-/* Lucide Icon override */
+/* Font Awesome icon sizing inside social links */
+.social-link i.fa-brands,
+.social-link i.fa-solid {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+/* Lucide Icon override (for project cards etc) */
 .social-link svg {
   width: 18px;
   height: 18px;
@@ -497,56 +512,16 @@
   }
 }
 
-/* --- Redesigned Footer Section --- */
+/* --- Simplified Footer Section --- */
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   width: 100%;
   padding-block: var(--space-8);
   margin-top: var(--space-12);
   border-top: 1px solid var(--border);
-}
-
-.footer-socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-4);
-}
-
-.footer-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  transition: border-color var(--transition-normal),
-              background-color var(--transition-normal),
-              color var(--transition-normal),
-              transform var(--transition-normal);
-  -webkit-tap-highlight-color: transparent;
-}
-
-.footer-link:hover {
-  border-color: var(--accent);
-  background-color: rgba(255, 255, 255, 0.03);
-  color: var(--text-primary);
-  transform: translateY(-2px);
-}
-
-.footer-link:active {
-  transform: translateY(0);
-}
-
-.footer-link svg {
-  width: 16px;
-  height: 16px;
-  stroke-width: 1.75px;
 }
 
 .footer-copyright {

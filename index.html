@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <title>airseen1 — Personal Portfolio</title>
-  <meta name="description" content="Personal portfolio of airseen1 (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
+  <title>Ibnu Hamdun — Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ibnu Hamdun (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
   
   <!-- SEO & Social Meta Tags -->
-  <meta property="og:title" content="airseen1 — Personal Portfolio">
-  <meta property="og:description" content="Personal portfolio of airseen1 (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
+  <meta property="og:title" content="Ibnu Hamdun — Personal Portfolio">
+  <meta property="og:description" content="Personal portfolio of Ibnu Hamdun (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ibnuwu.github.io/airsenuwu/">
   <meta property="og:image" content="https://ibnuwu.github.io/airsenuwu/assets/images/og-image.png">
-  <meta property="og:site_name" content="airseen1">
+  <meta property="og:site_name" content="ibnuwu">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@ibnuwu">
-  <meta name="twitter:title" content="airseen1 — Personal Portfolio">
-  <meta name="twitter:description" content="Personal portfolio of airseen1 (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
+  <meta name="twitter:title" content="Ibnu Hamdun — Personal Portfolio">
+  <meta name="twitter:description" content="Personal portfolio of Ibnu Hamdun (ibnuwu). Developer & Creative. Modern, minimalis, dan sangat cepat.">
   <meta name="twitter:image" content="https://ibnuwu.github.io/airsenuwu/assets/images/og-image.png">
 
   <!-- Favicon (Inline Minimal SVG) -->
@@ -29,6 +29,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 (for brand icons: Instagram, GitHub) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/variables.css">
@@ -48,69 +51,45 @@
 
     <!-- Main Content -->
     <main class="flex-grow w-full">
-      <!-- Section: Hero (Phase 5) -->
+      <!-- Section: Hero -->
       <section id="hero" class="w-full fade-in delay-1">
         
         <!-- Avatar Wrapper -->
         <div class="hero-avatar-wrapper fade-in delay-1">
-          <img src="assets/images/profile/avatar.svg" alt="airseen1 Profile Picture" class="hero-avatar" width="104" height="104" decoding="async">
+          <img id="profile-avatar" src="assets/images/profile/avatar.svg" alt="Ibnu Hamdun Profile Picture" class="hero-avatar" width="104" height="104" decoding="async">
         </div>
 
         <!-- Heading Group -->
         <div class="hero-meta mb-4 fade-in delay-2">
-          <h1 class="mb-1">airseen1</h1>
-          <span>@ibnuwu</span>
+          <h1 id="profile-name" class="mb-1">Ibnu Hamdun</h1>
+          <span id="profile-nickname" class="hero-nickname">ibnuwu</span>
         </div>
 
-        <!-- Tagline & Bio -->
-        <p class="hero-tagline mb-3 fade-in delay-2">Developer & Creative Builder</p>
-        <p class="hero-bio mb-8 fade-in delay-3">
-          Crafting minimal, high-performance web experiences and digital interfaces. Focused on clean code and design aesthetics.
-        </p>
+        <!-- Quote / Bio -->
+        <blockquote class="hero-quote fade-in delay-2">
+          <p id="profile-quote">"I got loyalty, got royalty inside my DNA"</p>
+          <cite id="profile-quote-source">— Kendrick Lamar, DNA.</cite>
+        </blockquote>
 
-        <!-- CTA Buttons -->
-        <div class="hero-actions mb-8 fade-in delay-3">
-          <a href="#projects" class="btn btn-primary" id="btn-view-projects">
-            <span>View Projects</span>
-            <i data-lucide="arrow-right" class="icon-sm" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:ibnuhandjn@gmail.com" class="btn btn-outline" id="btn-contact">
-            <span>Contact</span>
-            <i data-lucide="mail" class="icon-sm" aria-hidden="true"></i>
-          </a>
-        </div>
-
-        <!-- Social Media Icons Row -->
-        <div class="hero-socials fade-in delay-4">
-          <a href="https://www.instagram.com/airseen1?igsh=MWx2OWZ6ajFoNWZ3YQ==" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile" title="Instagram">
-            <i data-lucide="instagram" aria-hidden="true"></i>
+        <!-- Social Media Icons Row (Instagram, GitHub, Email only) -->
+        <div class="hero-socials fade-in delay-3">
+          <a href="https://www.instagram.com/airseen1?igsh=MWx2OWZ6ajFoNWZ3YQ==" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile" title="Instagram" id="social-instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
             <span class="sr-only">Instagram</span>
           </a>
-          <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub">
-            <i data-lucide="github" aria-hidden="true"></i>
+          <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub" id="social-github">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span>
           </a>
-          <a href="https://x.com/HamdddIbnu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X Profile" title="X (Twitter)">
-            <i data-lucide="twitter" aria-hidden="true"></i>
-            <span class="sr-only">X (Twitter)</span>
-          </a>
-          <a href="https://tiktok.com/@ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok Profile" title="TikTok">
-            <i data-lucide="video" aria-hidden="true"></i>
-            <span class="sr-only">TikTok</span>
-          </a>
-          <a href="https://pinterest.com/ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Pinterest Profile" title="Pinterest">
-            <i data-lucide="pin" aria-hidden="true"></i>
-            <span class="sr-only">Pinterest</span>
-          </a>
-          <a href="mailto:ibnuhandjn@gmail.com" class="social-link" aria-label="Kirim Email" title="Email">
-            <i data-lucide="mail" aria-hidden="true"></i>
+          <a href="mailto:ibnuhandjn@gmail.com" class="social-link" aria-label="Kirim Email" title="Email" id="social-email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <span class="sr-only">Email</span>
           </a>
         </div>
 
       </section>
 
-      <!-- Section: Navigation Tab Bar (Phase 6) -->
+      <!-- Section: Navigation Tab Bar -->
       <section id="content-nav" class="w-full mt-8">
         <div class="tabs-container fade-in delay-4" role="tablist" aria-label="Portfolio Sections">
           <div class="tabs-wrapper flex justify-center">
@@ -118,7 +97,7 @@
               Projects
             </button>
             <button class="tab-btn" data-tab="blog" aria-selected="false" role="tab" id="tab-blog" aria-controls="panel-blog">
-              Blog
+              Cerpen
             </button>
             <button class="tab-btn" data-tab="creative" aria-selected="false" role="tab" id="tab-creative" aria-controls="panel-creative">
               Creative
@@ -127,7 +106,7 @@
         </div>
       </section>
 
-      <!-- Section: Dynamic Content Area (Phases 7, 8, 9) -->
+      <!-- Section: Dynamic Content Area -->
       <section id="tab-content" class="w-full mt-8" aria-live="polite">
         
         <!-- Tab Panel: Projects -->
@@ -409,18 +388,7 @@
 
     <!-- Footer -->
     <footer class="footer-container fade-in delay-5" id="main-footer">
-      <div class="footer-socials">
-        <a href="https://x.com/HamdddIbnu" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="X (Twitter) Profile" title="X (Twitter)">
-          <i data-lucide="twitter" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/airseen1?igsh=MWx2OWZ6ajFoNWZ3YQ==" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Instagram Profile" title="Instagram">
-          <i data-lucide="instagram" aria-hidden="true"></i>
-        </a>
-        <a href="mailto:ibnuhandjn@gmail.com" class="footer-link" aria-label="Email" title="Email">
-          <i data-lucide="mail" aria-hidden="true"></i>
-        </a>
-      </div>
-      <p class="footer-copyright">&copy; 2026 airseen1. Dibuat dengan presisi.</p>
+      <p class="footer-copyright">&copy; 2026 ibnuwu. Dibuat dengan hati.</p>
     </footer>
 
   </div>

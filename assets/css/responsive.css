@@ -1,22 +1,12 @@
 /* ==========================================================
    responsive.css — Media Queries (Mobile First)
+   Optimized for Instagram in-app browser (≤480px)
    ========================================================== */
 
-/* --- Extra Small Devices (under 390px) --- */
-@media (max-width: 389px) {
+/* --- Extra Small Devices (under 360px) --- */
+@media (max-width: 359px) {
   :root {
     --container-padding: var(--space-4);
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-    align-items: stretch;
-    gap: var(--space-3);
-  }
-
-  .btn {
-    width: 100%;
   }
 
   .hero-socials {
@@ -24,19 +14,35 @@
   }
 
   .social-link {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .tab-btn {
+    font-size: var(--fs-xs);
+    padding: var(--space-3) var(--space-1);
   }
 }
 
-/* --- Small Devices (390px to 412px) --- */
-@media (min-width: 390px) and (max-width: 412px) {
+/* --- Small Devices (360px to 480px — IG in-app browser sweet spot) --- */
+@media (min-width: 360px) and (max-width: 480px) {
   :root {
     --container-padding: var(--space-5);
   }
 
-  .hero-actions {
+  .hero-socials {
     gap: var(--space-3);
+  }
+  
+  .social-link {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .tab-btn {
+    min-height: 48px;
+    padding: var(--space-4) var(--space-3);
   }
 }
 
@@ -62,11 +68,15 @@
     font-size: var(--fs-3xl);
   }
 
-  .hero-tagline {
-    font-size: var(--fs-xl);
+  .hero-nickname {
+    font-size: var(--fs-base);
   }
 
-  .hero-bio {
+  .hero-quote {
+    max-width: 480px;
+  }
+
+  .hero-quote p {
     font-size: var(--fs-base);
   }
 
@@ -111,7 +121,7 @@
   }
   
   #hero {
-    padding-block: var(--space-20) var(--space-12);
+    padding-block: 5rem 3rem;
   }
 }
 
@@ -122,6 +132,6 @@
   }
 
   #hero {
-    padding-block: var(--space-24) var(--space-16);
+    padding-block: 6rem 4rem;
   }
 }

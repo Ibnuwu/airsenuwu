@@ -7,6 +7,21 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
+  # --- Site Settings (Single File) ---
+  - name: "settings"
+    label: "⚙️ Pengaturan Situs"
+    files:
+      - name: "profile"
+        label: "Profil & Identitas"
+        file: "content/settings/profile.json"
+        fields:
+          - {label: "Foto Profil", name: "avatar", widget: "image", hint: "Upload foto profil (disarankan 1:1, min 200x200px)"}
+          - {label: "Nama Utama", name: "name", widget: "string", default: "Ibnu Hamdun", hint: "Nama yang ditampilkan di header utama"}
+          - {label: "Nickname", name: "nickname", widget: "string", default: "ibnuwu", hint: "Username/nickname yang muncul di bawah nama"}
+          - {label: "Kutipan / Quote", name: "quote", widget: "string", default: "I got loyalty, got royalty inside my DNA", hint: "Kutipan/lirik yang ditampilkan di bio"}
+          - {label: "Quote Attribution", name: "quote_source", widget: "string", default: "Kendrick Lamar — DNA.", required: false, hint: "Sumber kutipan (artis, lagu, dll)"}
+
+  # --- Projects ---
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
@@ -19,6 +34,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
+  # --- Cerpen / Blog ---
   - name: "blog"
     label: "Cerpen / Blog"
     folder: "content/blog"
@@ -29,6 +45,7 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+  # --- Creative Work ---
   - name: "creative"
     label: "Creative Work"
     folder: "content/creative"
