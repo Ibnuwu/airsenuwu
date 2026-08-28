@@ -2,9 +2,6 @@ backend:
   name: github
   repo: Ibnuwu/airsenuwu
   branch: main
-  auth_type: pkce
-  app_id: Ov23li7LILadx8NEOppL
-  base_url: https://ibnuwu.github.io
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
