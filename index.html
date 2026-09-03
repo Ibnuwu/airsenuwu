@@ -54,11 +54,11 @@
       <!-- Section: Hero -->
       <section id="hero" class="w-full fade-in delay-1">
         
-        <!-- Avatar Wrapper with Info Icon Trigger -->
+        <!-- Avatar Wrapper with Skull Icon Trigger -->
         <div class="hero-avatar-wrapper fade-in delay-1">
           <img id="profile-avatar" src="assets/images/profile/avatar.svg" alt="Ibnu Hamdun Profile Picture" class="hero-avatar" width="104" height="104" decoding="async">
-          <button id="about-trigger" class="info-trigger-btn" aria-label="About Ibnu Hamdun" title="About airseen1">
-            <i data-lucide="info" class="icon-sm" aria-hidden="true"></i>
+          <button id="about-trigger" class="info-trigger-btn" aria-label="About airseen1" title="About airseen1">
+            <span aria-hidden="true">💀</span>
           </button>
         </div>
 
@@ -70,15 +70,12 @@
           <span id="profile-nickname" class="hero-nickname">airseen1 &bull; ibnuwu</span>
         </div>
 
-        <!-- Modern Clean Bio -->
-        <p class="hero-intro text-sm text-secondary mb-4 fade-in delay-2" style="max-width: 480px; margin-inline: auto; line-height: 1.6;">
-          Tech Enthusiast &amp; Visual Creator. Living at the intersection of technology and visual storytelling—spending my days diving into software architecture and my nights sketching or exploring history.
-        </p>
-
-        <!-- Quote / Bio -->
-        <blockquote class="hero-quote fade-in delay-2 mb-6">
-          <p id="profile-quote">"I got loyalty, got royalty inside my DNA"</p>
-          <cite id="profile-quote-source">— Kendrick Lamar, DNA.</cite>
+        <!-- Kendrick Lamar Lyric Bio -->
+        <blockquote class="hero-quote fade-in delay-2 my-5">
+          <p id="profile-quote" class="text-sm text-secondary italic fw-medium" style="max-width: 440px; margin-inline: auto; line-height: 1.6;">
+            "I got, I got, I got, I got / Loyalty, got royalty inside my DNA."
+          </p>
+          <cite id="profile-quote-source" class="text-xs text-tertiary block mt-1">— Kendrick Lamar, DNA.</cite>
         </blockquote>
 
         <!-- Primary Call To Actions -->
@@ -93,94 +90,66 @@
           </a>
         </div>
 
-        <!-- Symmetrical Social Links Cards Grid -->
-        <div class="social-cards-grid grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left fade-in delay-3" style="max-width: 640px; margin-inline: auto;">
+        <!-- Touch-Target Spacious Social Links Grid (Min 48px height, 1 col mobile, 2 col desktop, 1rem gap) -->
+        <div class="social-grid grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left fade-in delay-3" style="max-width: 640px; margin-inline: auto;">
           
-          <!-- Card 1: Work & Tech -->
-          <div class="card p-5 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-2 mb-3 text-xs fw-semibold text-tertiary uppercase tracking-wider">
-                <i data-lucide="code-2" class="icon-sm text-tertiary"></i>
-                <span>Work &amp; Tech</span>
-              </div>
-              <ul class="social-links-list flex flex-col gap-2.5">
-                <li>
-                  <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i class="fa-brands fa-github text-sm"></i>
-                      <span>GitHub</span>
-                    </span>
-                    <span class="text-tertiary font-mono">@Ibnuwu</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/ibnu-hamdun" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i class="fa-brands fa-linkedin text-sm"></i>
-                      <span>LinkedIn</span>
-                    </span>
-                    <span class="text-tertiary font-mono">Ibnu Hamdun</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:zxhamdun2@gmail.com" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i class="fa-solid fa-envelope text-sm"></i>
-                      <span>Email</span>
-                    </span>
-                    <span class="text-tertiary font-mono">zxhamdun2@gmail.com</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <!-- Work & Tech Group -->
+          <div class="flex flex-col gap-3">
+            <span class="text-xs fw-semibold text-tertiary uppercase tracking-wider px-1">Work &amp; Tech</span>
+            <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i class="fa-brands fa-github text-base" aria-hidden="true"></i>
+                <span>GitHub</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">@Ibnuwu</span>
+            </a>
+            <a href="https://linkedin.com/in/ibnu-hamdun" target="_blank" rel="noopener noreferrer" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i class="fa-brands fa-linkedin text-base" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">Ibnu Hamdun</span>
+            </a>
+            <a href="mailto:zxhamdun2@gmail.com" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i class="fa-solid fa-envelope text-base" aria-hidden="true"></i>
+                <span>Email</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">zxhamdun2@gmail.com</span>
+            </a>
           </div>
 
-          <!-- Card 2: Pop Culture -->
-          <div class="card p-5 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-2 mb-3 text-xs fw-semibold text-tertiary uppercase tracking-wider">
-                <i data-lucide="sparkles" class="icon-sm text-tertiary"></i>
-                <span>Pop Culture</span>
-              </div>
-              <ul class="social-links-list flex flex-col gap-2.5">
-                <li>
-                  <a href="https://www.instagram.com/airseen1" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i class="fa-brands fa-instagram text-sm"></i>
-                      <span>Instagram</span>
-                    </span>
-                    <span class="text-tertiary font-mono">@airseen1</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://open.spotify.com/user/31ddwjupym4fqk5mhjflhzueko7q" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i class="fa-brands fa-spotify text-sm"></i>
-                      <span>Spotify</span>
-                    </span>
-                    <span class="text-tertiary font-mono">airseen1</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://letterboxd.com/Ibnduch/" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i data-lucide="film" class="icon-sm"></i>
-                      <span>Letterboxd</span>
-                    </span>
-                    <span class="text-tertiary font-mono">Ibnduch</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myanimelist.net/profile/Hamduncle" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
-                    <span class="flex items-center gap-2">
-                      <i data-lucide="tv" class="icon-sm"></i>
-                      <span>MyAnimeList</span>
-                    </span>
-                    <span class="text-tertiary font-mono">Hamduncle</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <!-- Pop Culture Group -->
+          <div class="flex flex-col gap-3">
+            <span class="text-xs fw-semibold text-tertiary uppercase tracking-wider px-1">Pop Culture</span>
+            <a href="https://www.instagram.com/airseen1" target="_blank" rel="noopener noreferrer" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i class="fa-brands fa-instagram text-base" aria-hidden="true"></i>
+                <span>Instagram</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">@airseen1</span>
+            </a>
+            <a href="https://open.spotify.com/user/31ddwjupym4fqk5mhjflhzueko7q" target="_blank" rel="noopener noreferrer" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i class="fa-brands fa-spotify text-base" aria-hidden="true"></i>
+                <span>Spotify</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">airseen1</span>
+            </a>
+            <a href="https://letterboxd.com/Ibnduch/" target="_blank" rel="noopener noreferrer" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i data-lucide="film" class="icon-sm" aria-hidden="true"></i>
+                <span>Letterboxd</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">Ibnduch</span>
+            </a>
+            <a href="https://myanimelist.net/profile/Hamduncle" target="_blank" rel="noopener noreferrer" class="social-touch-btn">
+              <span class="flex items-center gap-3 text-sm text-primary fw-medium">
+                <i data-lucide="tv" class="icon-sm" aria-hidden="true"></i>
+                <span>MyAnimeList</span>
+              </span>
+              <span class="text-xs text-tertiary font-mono">Hamduncle</span>
+            </a>
           </div>
 
         </div>
@@ -226,7 +195,7 @@
                   </div>
                   <h3 class="project-title text-xl fw-bold text-primary mb-2">airsenuwu</h3>
                   <p class="project-description text-sm text-secondary mb-4">
-                    Personal portfolio and digital workspace designed with a minimalist dark theme, focused on performance, mobile ergonomics, and decoupled content management.
+                    Dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.
                   </p>
                   <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
                     <span class="pill">HTML5</span>
@@ -285,22 +254,10 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer-container py-8 border-t border-solid border-border mt-12 fade-in delay-5" id="main-footer">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-secondary">
-        <p class="footer-copyright">&copy; 2026 Ibnu Hamdun. All rights reserved.</p>
-
-        <!-- Secondary Social Badges -->
-        <div class="footer-socials flex items-center gap-4">
-          <a href="https://myanimelist.net/profile/Hamduncle" target="_blank" rel="noopener noreferrer" class="footer-social-link text-tertiary hover:text-primary transition-colors" title="MyAnimeList Profile" aria-label="MyAnimeList">
-            <span>MyAnimeList</span>
-          </a>
-          <span class="text-tertiary">&bull;</span>
-          <a href="https://letterboxd.com/Ibnduch/" target="_blank" rel="noopener noreferrer" class="footer-social-link text-tertiary hover:text-primary transition-colors" title="Letterboxd Profile" aria-label="Letterboxd">
-            <span>Letterboxd</span>
-          </a>
-        </div>
-      </div>
+    <!-- Minimal Clean Footer (Email / Contact Link Only) -->
+    <footer class="footer-container py-6 border-t border-solid border-border mt-12 fade-in delay-5 text-center flex flex-col items-center gap-2 text-xs text-secondary" id="main-footer">
+      <p class="footer-copyright">&copy; 2026 Ibnu Hamdun. All rights reserved.</p>
+      <a href="mailto:zxhamdun2@gmail.com" class="text-tertiary hover:text-primary transition-colors font-mono">zxhamdun2@gmail.com</a>
     </footer>
 
   </div>
@@ -319,16 +276,14 @@
           </div>
         </div>
         <div class="about-bio text-sm text-secondary flex flex-col gap-4">
-          <p>
-            Tech Enthusiast &amp; Visual Creator. Living at the intersection of technology and visual storytelling—spending my days diving into software architecture and my nights sketching or exploring history.
+          <p class="italic fw-medium text-primary">
+            "I got, I got, I got, I got / Loyalty, got royalty inside my DNA."
           </p>
           <div class="daily-tools-section pt-3 border-t border-solid border-border">
             <span class="text-xs fw-semibold text-tertiary uppercase tracking-wider block mb-2">Daily Tools</span>
-            <div class="flex flex-wrap gap-2 text-xs">
-              <span class="pill">Clip Studio Paint</span>
-              <span class="pill">Google Workspace</span>
-              <span class="pill">Microsoft Office Suite</span>
-            </div>
+            <p class="text-xs text-secondary font-mono leading-relaxed">
+              Code Editor / Clip Studio Paint / Google Workspace / MS Office / Buku Sketching Tradisional
+            </p>
           </div>
         </div>
       </div>

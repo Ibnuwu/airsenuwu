@@ -13,14 +13,14 @@ const FALLBACK_DATA = {
       title: 'airsenuwu',
       thumbnail: 'assets/images/projects/project-featured.svg',
       category: 'Portfolio Web & Workspace',
-      description: 'Personal portfolio and digital workspace designed with a minimalist dark theme, focused on performance, mobile ergonomics, and decoupled content management.',
+      description: 'Dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.',
       status: 'Featured',
       tech: 'HTML5, CSS3, JavaScript, Decap CMS',
       repo: 'https://github.com/Ibnuwu/airsenuwu',
       demo: 'https://airsenuwu.is-a.dev',
       body: `### airsenuwu
 
-Personal portfolio and digital workspace designed with a minimalist dark theme, focused on performance, mobile ergonomics, and decoupled content management.`
+Dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.`
     }
   ],
   blog: [],

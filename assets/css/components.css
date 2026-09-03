@@ -34,28 +34,55 @@
   transform: scale(1.03);
 }
 
-/* Info Icon Trigger on Hero Avatar */
+/* Skull Icon Trigger on Hero Avatar */
 .info-trigger-btn {
   position: absolute;
   bottom: 2px;
   right: 2px;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--radius-full);
   background-color: var(--bg-card);
   border: 1px solid var(--border);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-size: 1.15rem;
+  line-height: 1;
   transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .info-trigger-btn:hover {
-  color: var(--text-primary);
   border-color: var(--border-hover);
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-elevated);
+  transform: scale(1.1);
+}
+
+/* Touch-Target Block Buttons for Social Links (Min height 48px) */
+.social-touch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.social-touch-btn:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-elevated);
+  transform: translateY(-1px);
+}
+
+.social-touch-btn:active {
+  transform: translateY(0);
 }
 
 /* Buttons */
