@@ -102,6 +102,11 @@
   transform: translateY(-1px);
 }
 
+/* --- Hidden Modals Utility --- */
+.modal-hidden {
+  display: none !important;
+}
+
 /* --- Hidden About Modal / Mobile Bottom Sheet --- */
 .about-modal {
   position: fixed;
@@ -122,6 +127,7 @@
 }
 
 .about-modal.modal-hidden {
+  display: none !important;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

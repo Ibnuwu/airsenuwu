@@ -9,158 +9,22 @@
 const FALLBACK_DATA = {
   projects: [
     {
-      slug: 'airsenuwu-portfolio',
-      title: 'Airsenuwu Portfolio',
+      slug: 'airsenuwu',
+      title: 'airsenuwu',
       thumbnail: 'assets/images/projects/project-featured.svg',
-      category: 'Portfolio Web',
-      description: 'Website portfolio pribadi modern, minimalis, dan sangat cepat yang dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.',
+      category: 'Portfolio Web & Workspace',
+      description: 'Personal portfolio and digital workspace designed with a minimalist dark theme, focused on performance, mobile ergonomics, and decoupled content management.',
       status: 'Featured',
       tech: 'HTML5, CSS3, JavaScript, Decap CMS',
       repo: 'https://github.com/Ibnuwu/airsenuwu',
-      demo: 'https://ibnuwu.github.io/airsenuwu/',
-      body: `### Deskripsi Proyek
+      demo: 'https://airsenuwu.is-a.dev',
+      body: `### airsenuwu
 
-Website ini merupakan portofolio personal yang dirancang dengan estetika modern, performa tinggi, dan struktur kode yang sangat bersih. Memanfaatkan CSS Custom Properties untuk membangun design system yang konsisten dan modular.
-
-### Fitur Utama
-
-1. **Akses Admin Mudah**: Mengintegrasikan Decap CMS (sebelumnya Netlify CMS) untuk pengelolaan konten projects, blog, dan karya kreatif tanpa memerlukan database backend.
-2. **Dynamic Client Loader**: Mengambil data markdown secara dinamis langsung dari GitHub API dengan sistem caching \`localStorage\` untuk performa instan dan pencegahan rate-limit.
-3. **Visual Premium**: Efek mouse-glow interaktif, glassmorphism card, dan animasi mikro responsif.
-4. **Fallback Handal**: Jika GitHub API limit tercapai atau perangkat sedang offline, sistem secara otomatis beralih menggunakan data lokal instan.`
-    },
-    {
-      slug: 'gitjournal',
-      title: 'GitJournal',
-      thumbnail: 'assets/images/projects/project-1.svg',
-      category: 'Mobile App',
-      status: 'Active',
-      description: 'Aplikasi pencatatan berbasis markdown minimalis yang tersinkronisasi otomatis dengan repository Git. Didesain untuk keamanan data pribadi penuh.',
-      tech: 'Flutter, Rust, Git',
-      repo: 'https://github.com/Ibnuwu',
-      demo: '#',
-      body: `### Deskripsi Proyek
-
-GitJournal adalah editor markdown mobile-first yang kuat, terintegrasi langsung dengan Git hosting (GitHub, GitLab, custom server). Semua catatan Anda disimpan dalam format markdown standar terbuka.
-
-### Kelebihan Utama
-
-- **Privasi Penuh**: Anda yang memegang kendali atas server Git Anda tanpa perantara pihak ketiga.
-- **Sinkronisasi Otomatis**: Menyinkronkan catatan secara real-time pada setiap perubahan dokumen.
-- **Tampilan Minimalis**: Antarmuka terfokus dengan mode distorsi minimal untuk kenyamanan menulis.`
-    },
-    {
-      slug: 'zenreader',
-      title: 'ZenReader',
-      thumbnail: 'assets/images/projects/project-2.svg',
-      category: 'Web App',
-      status: 'In Progress',
-      description: 'Minimalist RSS aggregator and reader with zero algorithm bloat, local-first caching, and absolute content focus.',
-      tech: 'React, Go, SQLite',
-      repo: 'https://github.com/Ibnuwu',
-      demo: 'https://ibnuwu.github.io/',
-      body: `### Description
-
-ZenReader is an RSS client designed to remove the noise of the modern internet. It does not contain any recommendation algorithms, trackers, or social features.
-
-### Key Architectural Highlights
-
-- **Local-First Design**: Powered by a local-first architecture with SQLite replication for extreme performance.
-- **Instant Offline Mode**: Pre-caches feeds and content for continuous, offline-first reading.
-- **Customizable Typography**: Elegant fonts and fluid line-widths to reduce eye strain.`
+Personal portfolio and digital workspace designed with a minimalist dark theme, focused on performance, mobile ergonomics, and decoupled content management.`
     }
-  ],  blog: [
-    {
-      slug: 'membangun-design-system-minimalis',
-      title: 'Membangun Design System Minimalis dengan CSS Custom Properties',
-      category: 'Tutorial',
-      date: '2026-05-20T00:00:00.000Z',
-      excerpt: 'Panduan praktis merancang warna, tipografi, dan grid tokens yang tangguh, clean, dan mudah dipelihara menggunakan native CSS.',
-      body: `### Membangun Design System Minimalis dengan CSS Custom Properties
-
-Dalam pengembangan web modern, banyak developer langsung memilih Tailwind CSS atau framework UI lainnya. Namun, untuk proyek berukuran kecil hingga menengah, kita bisa membangun **design system** yang sangat ringan, performan, dan mudah dipelihara hanya dengan native CSS Custom Properties.
-
-#### 1. Mengapa Native CSS?
-
-- **Zero Overhead**: Tidak memerlukan build-step atau pemrosesan compiler tambahan.
-- **Dynamic**: Nilai variabel bisa diubah langsung via JavaScript secara real-time.
-- **Clean HTML**: Kode HTML bersih dari class utilitas yang menumpuk.
-
-#### 2. Mendefinisikan Tokens di \`:root\`
-
-Langkah pertama adalah membuat file \`variables.css\` dan menaruh semua nilai dasar di sana:
-
-\`\`\`css
-:root {
-  /* Colors */
-  --bg-primary: #0a0a0a;
-  --bg-card: #171717;
-  --border: #262626;
-  --text-primary: #f5f5f5;
-  --text-secondary: #a3a3a3;
-}
-\`\`\`
-
-Dengan pendekatan ini, Anda akan memiliki kontrol penuh atas visual situs Anda!`
-    },
-    {
-      slug: 'review-buku-quiet',
-      title: 'Review Buku: Quiet — Kekuatan Introvert di Dunia yang Berisik',
-      category: 'Review',
-      date: '2026-04-12T00:00:00.000Z',
-      excerpt: 'Catatan kritis dan ulasan mendalam mengenai karya Susan Cain tentang bagaimana kontribusi kaum tenang sering kali diremehkan.',
-      body: `### Review Buku: Quiet — Kekuatan Introvert di Dunia yang Berisik
-
-Dalam buku *Quiet: The Power of Introverts in a World That Can't Stop Talking*, Susan Cain menyoroti bias kultural masyarakat modern yang sangat memuja kepribadian ekstrovert.
-
-#### Inti Argumen Buku
-
-Cain menjelaskan bagaimana struktur sosial kita dirancang untuk menguntungkan mereka yang bersuara lantang. Padahal, banyak penemuan terbesar umat manusia lahir dari kesendirian dan perenungan mendalam.`
-    },
-    {
-      slug: 'optimasi-performa-web-static',
-      title: 'Optimasi Performa Web Static di GitHub Pages',
-      category: 'Technical Note',
-      date: '2026-03-01T00:00:00.000Z',
-      excerpt: 'Teknik optimasi asset, zero-dependency scripting, dan caching strategi untuk mencapai skor Lighthouse 95+.',
-      body: `### Optimasi Performa Web Static di GitHub Pages
-
-Merancang website berkecepatan tinggi pada GitHub Pages membutuhkan disiplin dalam penyajian asset dan eksekusi script.
-
-#### Strategi Utama
-
-1. **Lightweight HTML & Vanilla JS**: Menghindari framework JavaScript berat.
-2. **SVG & WebP Images**: Menggunakan format vektor SVG atau WebP terkompresi.
-3. **Decap CMS Direct Fetching**: Mengambil data konten markdown secara asynchronous.`
-    }
-  ], }
   ],
-  creative: [
-    {
-      title: 'Silence of the Mist',
-      image: 'assets/images/creative/creative-1.svg',
-      category: 'photography',
-      description: 'Foto lanskap pagi berkabut tebal di lereng pegunungan Jawa Tengah.'
-    },
-    {
-      title: 'Neon Cyberpunk Sphere',
-      image: 'assets/images/creative/creative-2.svg',
-      category: 'artwork',
-      description: 'Ilustrasi 3D bola neon futuristik dengan gaya cyberpunk retro.'
-    },
-    {
-      title: 'Minimal Web Layout Concept',
-      image: 'assets/images/creative/creative-3.svg',
-      category: 'design',
-      description: 'Konsep desain antarmuka web minimalis dengan fokus grid asimetris.'
-    },
-    {
-      title: 'Generative Canvas Wireframe',
-      image: 'assets/images/creative/creative-4.svg',
-      category: 'experiment',
-      description: 'Eksperimen kode JavaScript Canvas untuk menghasilkan seni geometris acak.'
-    }
-  ]
+  blog: [],
+  creative: []
 };
 
 // --- Configurations & State ---
@@ -472,6 +336,20 @@ function renderBlog(posts) {
   const container = document.getElementById('blog-container');
   if (!container) return;
 
+  if (!posts || posts.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state card text-center p-8 flex flex-col items-center justify-center">
+        <i data-lucide="pen-tool" class="icon-lg text-tertiary mb-3" style="width:32px;height:32px;"></i>
+        <h4 class="text-md fw-semibold text-primary mb-1">No Articles Published Yet</h4>
+        <p class="text-xs text-secondary">Articles, technical notes, and reviews will appear here once published via Decap CMS.</p>
+      </div>
+    `;
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+    return;
+  }
+
   container.innerHTML = '';
 
   posts.forEach(post => {
@@ -485,17 +363,17 @@ function renderBlog(posts) {
 
     const postHtml = `
       <article class="blog-item card" data-slug="${post.slug}">
-        <a href="#" class="blog-link flex flex-col justify-between h-full p-6 btn-read-blog" aria-label="Baca cerpen ${post.title}">
+        <a href="#" class="blog-link flex flex-col justify-between h-full p-6 btn-read-blog" aria-label="Read ${post.title}">
           <div>
             <div class="flex items-center gap-3 mb-3">
-              <span class="pill">${post.category || 'Cerpen'}</span>
+              <span class="pill">${post.category || 'Blog'}</span>
               <time class="blog-date text-xs text-tertiary" datetime="${dateRaw}">${dateFormatted}</time>
             </div>
             <h3 class="blog-title text-md fw-bold text-primary mb-2">${post.title}</h3>
             <p class="blog-excerpt text-xs text-secondary mb-4">${post.excerpt || post.description || ''}</p>
           </div>
           <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
-            <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
+            <span class="text-xs fw-medium text-accent">Read Article</span>
             <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
           </div>
         </a>
@@ -513,12 +391,26 @@ function renderCreative(items) {
   const container = document.getElementById('creative-container');
   if (!container) return;
 
+  if (!items || items.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state card text-center p-8 flex flex-col items-center justify-center" style="grid-column: 1 / -1;">
+        <i data-lucide="palette" class="icon-lg text-tertiary mb-3" style="width:32px;height:32px;"></i>
+        <h4 class="text-md fw-semibold text-primary mb-1">No Creative Works Uploaded Yet</h4>
+        <p class="text-xs text-secondary">Digital sketches, traditional sketchbook scans, and design assets will be displayed here.</p>
+      </div>
+    `;
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+    return;
+  }
+
   container.innerHTML = '';
 
   items.forEach(item => {
     const itemHtml = `
       <div class="creative-item card" data-category="${item.category || 'photography'}">
-        <button class="gallery-trigger" aria-label="Lihat ${item.title}">
+        <button class="gallery-trigger" aria-label="View ${item.title}">
           <div class="creative-img-wrapper">
             <img src="${item.image}" alt="${item.title}" class="creative-img" width="300" height="300" loading="lazy" decoding="async">
           </div>

@@ -57,7 +57,7 @@
         <!-- Avatar Wrapper with Info Icon Trigger -->
         <div class="hero-avatar-wrapper fade-in delay-1">
           <img id="profile-avatar" src="assets/images/profile/avatar.svg" alt="Ibnu Hamdun Profile Picture" class="hero-avatar" width="104" height="104" decoding="async">
-          <button id="about-trigger" class="info-trigger-btn" aria-label="Informasi Lengkap tentang Ibnu Hamdun" title="Tentang airseen1">
+          <button id="about-trigger" class="info-trigger-btn" aria-label="About Ibnu Hamdun" title="About airseen1">
             <i data-lucide="info" class="icon-sm" aria-hidden="true"></i>
           </button>
         </div>
@@ -70,9 +70,9 @@
           <span id="profile-nickname" class="hero-nickname">airseen1 &bull; ibnuwu</span>
         </div>
 
-        <!-- Tagline & Intro -->
-        <p class="hero-intro text-sm text-secondary mb-4 fade-in delay-2" style="max-width: 440px; margin-inline: auto;">
-          Mahasiswa Sistem Informasi, Frontend Engineer & Visual Creative. Membangun antarmuka web yang bersih, cepat, dan terfokus.
+        <!-- Modern Clean Bio -->
+        <p class="hero-intro text-sm text-secondary mb-4 fade-in delay-2" style="max-width: 480px; margin-inline: auto; line-height: 1.6;">
+          Tech Enthusiast &amp; Visual Creator. Living at the intersection of technology and visual storytelling—spending my days diving into software architecture and my nights sketching or exploring history.
         </p>
 
         <!-- Quote / Bio -->
@@ -82,7 +82,7 @@
         </blockquote>
 
         <!-- Primary Call To Actions -->
-        <div class="hero-actions flex justify-center gap-3 mb-6 fade-in delay-3">
+        <div class="hero-actions flex justify-center gap-3 mb-8 fade-in delay-3">
           <a href="#content-nav" id="cta-projects" class="btn btn-primary btn-hero">
             <i data-lucide="layout-grid" class="icon-sm" aria-hidden="true"></i>
             <span>View Projects</span>
@@ -93,24 +93,96 @@
           </a>
         </div>
 
-        <!-- Social Media Icons Row (Primary Socials) -->
-        <div class="hero-socials fade-in delay-3">
-          <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub" id="social-github">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span>
-          </a>
-          <a href="https://www.instagram.com/airseen1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile" title="Instagram" id="social-instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>
-          </a>
-          <a href="mailto:zxhamdun2@gmail.com" class="social-link" aria-label="Email airseen1" title="Email" id="social-email">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            <span class="sr-only">Email</span>
-          </a>
-          <a href="https://open.spotify.com/user/31ddwjupym4fqk5mhjflhzueko7q" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Spotify Profile" title="Spotify" id="social-spotify">
-            <i class="fa-brands fa-spotify" aria-hidden="true"></i>
-            <span class="sr-only">Spotify</span>
-          </a>
+        <!-- Symmetrical Social Links Cards Grid -->
+        <div class="social-cards-grid grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left fade-in delay-3" style="max-width: 640px; margin-inline: auto;">
+          
+          <!-- Card 1: Work & Tech -->
+          <div class="card p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3 text-xs fw-semibold text-tertiary uppercase tracking-wider">
+                <i data-lucide="code-2" class="icon-sm text-tertiary"></i>
+                <span>Work &amp; Tech</span>
+              </div>
+              <ul class="social-links-list flex flex-col gap-2.5">
+                <li>
+                  <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-brands fa-github text-sm"></i>
+                      <span>GitHub</span>
+                    </span>
+                    <span class="text-tertiary font-mono">@Ibnuwu</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/ibnu-hamdun" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-brands fa-linkedin text-sm"></i>
+                      <span>LinkedIn</span>
+                    </span>
+                    <span class="text-tertiary font-mono">Ibnu Hamdun</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:zxhamdun2@gmail.com" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-solid fa-envelope text-sm"></i>
+                      <span>Email</span>
+                    </span>
+                    <span class="text-tertiary font-mono">zxhamdun2@gmail.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2: Pop Culture -->
+          <div class="card p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-3 text-xs fw-semibold text-tertiary uppercase tracking-wider">
+                <i data-lucide="sparkles" class="icon-sm text-tertiary"></i>
+                <span>Pop Culture</span>
+              </div>
+              <ul class="social-links-list flex flex-col gap-2.5">
+                <li>
+                  <a href="https://www.instagram.com/airseen1" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-brands fa-instagram text-sm"></i>
+                      <span>Instagram</span>
+                    </span>
+                    <span class="text-tertiary font-mono">@airseen1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://open.spotify.com/user/31ddwjupym4fqk5mhjflhzueko7q" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i class="fa-brands fa-spotify text-sm"></i>
+                      <span>Spotify</span>
+                    </span>
+                    <span class="text-tertiary font-mono">airseen1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://letterboxd.com/Ibnduch/" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i data-lucide="film" class="icon-sm"></i>
+                      <span>Letterboxd</span>
+                    </span>
+                    <span class="text-tertiary font-mono">Ibnduch</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://myanimelist.net/profile/Hamduncle" target="_blank" rel="noopener noreferrer" class="social-card-item flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors">
+                    <span class="flex items-center gap-2">
+                      <i data-lucide="tv" class="icon-sm"></i>
+                      <span>MyAnimeList</span>
+                    </span>
+                    <span class="text-tertiary font-mono">Hamduncle</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
       </section>
@@ -140,21 +212,21 @@
           
           <div class="projects-section flex flex-col gap-8" id="projects-container">
             
-            <!-- Featured Project (Full-Width Card) -->
-            <div class="project-card featured-card card flex flex-col" id="featured-project">
+            <!-- Single Featured Project: airsenuwu -->
+            <div class="project-card featured-card card flex flex-col" data-slug="airsenuwu">
               <div class="project-thumbnail-wrapper">
-                <img src="assets/images/projects/project-featured.svg" alt="Airsenuwu Portfolio Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
+                <img src="assets/images/projects/project-featured.svg" alt="airsenuwu Portfolio Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
                 <span class="project-status badge-completed">Featured</span>
               </div>
               <div class="project-content flex flex-col justify-between">
                 <div>
                   <div class="flex items-center justify-between mb-2">
-                    <span class="project-category text-xs fw-semibold text-tertiary">Portfolio Web</span>
+                    <span class="project-category text-xs fw-semibold text-tertiary">Portfolio Web &amp; Workspace</span>
                     <span class="pill">Completed</span>
                   </div>
-                  <h3 class="project-title text-xl fw-bold text-primary mb-2">Airsenuwu Portfolio</h3>
+                  <h3 class="project-title text-xl fw-bold text-primary mb-2">airsenuwu</h3>
                   <p class="project-description text-sm text-secondary mb-4">
-                    Website portfolio pribadi modern, minimalis, dan sangat cepat yang dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.
+                    Personal portfolio and digital workspace designed with a minimalist dark theme, focused on performance, mobile ergonomics, and decoupled content management.
                   </p>
                   <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
                     <span class="pill">HTML5</span>
@@ -163,90 +235,17 @@
                     <span class="pill">Decap CMS</span>
                   </div>
                 </div>
-                <div class="project-links flex gap-4">
-                  <a href="https://github.com/Ibnuwu/airsenuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository untuk Airsenuwu Portfolio">
+                <div class="project-links flex gap-3 flex-wrap">
+                  <a href="https://github.com/Ibnuwu/airsenuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository for airsenuwu">
                     <i data-lucide="github" class="icon-sm" aria-hidden="true"></i>
                     <span>Repository</span>
                   </a>
-                  <a href="https://ibnuwu.github.io/airsenuwu/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm-action" aria-label="Live Demo untuk Airsenuwu Portfolio">
+                  <a href="https://airsenuwu.is-a.dev" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm-action" aria-label="Live Demo for airsenuwu">
                     <i data-lucide="external-link" class="icon-sm" aria-hidden="true"></i>
                     <span>Live Demo</span>
                   </a>
                 </div>
               </div>
-            </div>
-
-            <!-- Normal Projects Grid -->
-            <div class="projects-grid">
-              
-              <!-- Project 1 -->
-              <div class="project-card card flex flex-col">
-                <div class="project-thumbnail-wrapper">
-                  <img src="assets/images/projects/project-1.svg" alt="GitJournal Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
-                </div>
-                <div class="project-content flex flex-col justify-between flex-grow">
-                  <div>
-                    <div class="flex items-center justify-between mb-2">
-                      <span class="project-category text-xs fw-semibold text-tertiary">Mobile App</span>
-                      <span class="pill status-active">Active</span>
-                    </div>
-                    <h3 class="project-title text-md fw-bold text-primary mb-2">GitJournal</h3>
-                    <p class="project-description text-xs text-secondary mb-4">
-                      Aplikasi pencatatan berbasis markdown minimalis yang tersinkronisasi otomatis dengan repository Git. Didesain untuk keamanan data pribadi penuh.
-                    </p>
-                    <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
-                      <span class="pill">Flutter</span>
-                      <span class="pill">Rust</span>
-                      <span class="pill">Git</span>
-                    </div>
-                  </div>
-                  <div class="project-links flex gap-3">
-                    <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository untuk GitJournal">
-                      <i data-lucide="github" class="icon-sm" aria-hidden="true"></i>
-                      <span>Repo</span>
-                    </a>
-                    <a href="#" class="btn btn-primary btn-sm-action disabled" aria-label="Live Demo tidak tersedia untuk GitJournal" tabindex="-1">
-                      <i data-lucide="external-link" class="icon-sm" aria-hidden="true"></i>
-                      <span>Demo</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 2 -->
-              <div class="project-card card flex flex-col">
-                <div class="project-thumbnail-wrapper">
-                  <img src="assets/images/projects/project-2.svg" alt="ZenReader Thumbnail" class="project-thumbnail" width="400" height="220" loading="lazy" decoding="async">
-                </div>
-                <div class="project-content flex flex-col justify-between flex-grow">
-                  <div>
-                    <div class="flex items-center justify-between mb-2">
-                      <span class="project-category text-xs fw-semibold text-tertiary">Web App</span>
-                      <span class="pill status-progress">In Progress</span>
-                    </div>
-                    <h3 class="project-title text-md fw-bold text-primary mb-2">ZenReader</h3>
-                    <p class="project-description text-xs text-secondary mb-4">
-                      Minimalist RSS aggregator and reader with zero algorithm bloat, local-first caching, and absolute content focus.
-                    </p>
-                    <div class="project-tech-stack flex flex-wrap gap-2 mb-6">
-                      <span class="pill">React</span>
-                      <span class="pill">Go</span>
-                      <span class="pill">SQLite</span>
-                    </div>
-                  </div>
-                  <div class="project-links flex gap-3">
-                    <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm-action" aria-label="GitHub Repository untuk ZenReader">
-                      <i data-lucide="github" class="icon-sm" aria-hidden="true"></i>
-                      <span>Repo</span>
-                    </a>
-                    <a href="https://ibnuwu.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm-action" aria-label="Live Demo untuk ZenReader">
-                      <i data-lucide="external-link" class="icon-sm" aria-hidden="true"></i>
-                      <span>Demo</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
           </div>
@@ -257,67 +256,12 @@
         <div id="panel-blog" class="tab-panel hidden fade-in" role="tabpanel" aria-labelledby="tab-blog" aria-hidden="true">
           
           <div class="blog-section flex flex-col gap-6" id="blog-container">
-            
-            <!-- Blog Item 1 -->
-            <article class="blog-item card">
-              <a href="#" class="blog-link flex flex-col justify-between h-full p-6">
-                <div>
-                  <div class="flex items-center gap-3 mb-3">
-                    <span class="pill">Cerpen</span>
-                    <time class="blog-date text-xs text-tertiary" datetime="2026-06-14">14 Jun 2026</time>
-                  </div>
-                  <h3 class="blog-title text-md fw-bold text-primary mb-2">Misteri Jam Dinding Tua</h3>
-                  <p class="blog-excerpt text-xs text-secondary mb-4">
-                    Setiap malam jam itu berdentang tepat pada pukul 12, membawa kenangan aneh dari masa lalu yang tak pernah terjadi...
-                  </p>
-                </div>
-                <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
-                  <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
-                  <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
-                </div>
-              </a>
-            </article>
-
-            <!-- Blog Item 2 -->
-            <article class="blog-item card">
-              <a href="#" class="blog-link flex flex-col justify-between h-full p-6">
-                <div>
-                  <div class="flex items-center gap-3 mb-3">
-                    <span class="pill">Tutorial</span>
-                    <time class="blog-date text-xs text-tertiary" datetime="2026-05-20">20 Mei 2026</time>
-                  </div>
-                  <h3 class="blog-title text-md fw-bold text-primary mb-2">Membangun Design System Minimalis dengan CSS Custom Properties</h3>
-                  <p class="blog-excerpt text-xs text-secondary mb-4">
-                    Panduan praktis merancang warna, tipografi, dan grid tokens yang tangguh, clean, dan mudah dipelihara menggunakan native CSS.
-                  </p>
-                </div>
-                <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
-                  <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
-                  <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
-                </div>
-              </a>
-            </article>
-
-            <!-- Blog Item 3 -->
-            <article class="blog-item card">
-              <a href="#" class="blog-link flex flex-col justify-between h-full p-6">
-                <div>
-                  <div class="flex items-center gap-3 mb-3">
-                    <span class="pill">Review</span>
-                    <time class="blog-date text-xs text-tertiary" datetime="2026-04-12">12 Apr 2026</time>
-                  </div>
-                  <h3 class="blog-title text-md fw-bold text-primary mb-2">Review Buku: Quiet — Kekuatan Introvert di Dunia yang Berisik</h3>
-                  <p class="blog-excerpt text-xs text-secondary mb-4">
-                    Catatan kritis dan ulasan mendalam mengenai karya Susan Cain tentang bagaimana kontribusi kaum tenang sering kali diremehkan.
-                  </p>
-                </div>
-                <div class="blog-footer flex items-center justify-between mt-2 pt-2 border-t border-solid border-border-hover">
-                  <span class="text-xs fw-medium text-accent">Baca Selengkapnya</span>
-                  <i data-lucide="arrow-up-right" class="icon-sm text-tertiary"></i>
-                </div>
-              </a>
-            </article>
-
+            <!-- Empty State Fallback -->
+            <div class="empty-state card text-center p-8 flex flex-col items-center justify-center">
+              <i data-lucide="pen-tool" class="icon-lg text-tertiary mb-3" style="width:32px;height:32px;"></i>
+              <h4 class="text-md fw-semibold text-primary mb-1">No Articles Published Yet</h4>
+              <p class="text-xs text-secondary">Articles, technical notes, and reviews will appear here once published via Decap CMS.</p>
+            </div>
           </div>
 
         </div>
@@ -326,85 +270,14 @@
         <div id="panel-creative" class="tab-panel hidden fade-in" role="tabpanel" aria-labelledby="tab-creative" aria-hidden="true">
           
           <div class="creative-section flex flex-col gap-6">
-            
-            <!-- Category Filters -->
-            <div class="creative-filters flex flex-wrap gap-2 justify-center" role="group" aria-label="Filter Creative Works">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="photography">Photography</button>
-              <button class="filter-btn" data-filter="artwork">Artwork</button>
-              <button class="filter-btn" data-filter="design">Design</button>
-              <button class="filter-btn" data-filter="experiment">Eksperimen</button>
-            </div>
-
-            <!-- Gallery Grid -->
             <div class="creative-grid" id="creative-container">
-              
-              <!-- Gallery Item 1 -->
-              <div class="creative-item card" data-category="photography">
-                <button class="gallery-trigger" aria-label="Lihat Silence of the Mist">
-                  <div class="creative-img-wrapper">
-                    <img src="assets/images/creative/creative-1.svg" alt="Silence of the Mist" class="creative-img" width="300" height="400" loading="lazy" decoding="async">
-                  </div>
-                  <div class="creative-meta p-4 flex justify-between items-center">
-                    <div>
-                      <span class="creative-category text-xs fw-semibold text-tertiary">Photography</span>
-                      <h4 class="creative-title text-sm fw-medium text-primary">Silence of the Mist</h4>
-                    </div>
-                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
-                  </div>
-                </button>
+              <!-- Empty State Fallback -->
+              <div class="empty-state card text-center p-8 flex flex-col items-center justify-center" style="grid-column: 1 / -1;">
+                <i data-lucide="palette" class="icon-lg text-tertiary mb-3" style="width:32px;height:32px;"></i>
+                <h4 class="text-md fw-semibold text-primary mb-1">No Creative Works Uploaded Yet</h4>
+                <p class="text-xs text-secondary">Digital sketches, traditional sketchbook scans, and design assets will be displayed here.</p>
               </div>
-
-              <!-- Gallery Item 2 -->
-              <div class="creative-item card" data-category="artwork">
-                <button class="gallery-trigger" aria-label="Lihat Neon Cyberpunk Sphere">
-                  <div class="creative-img-wrapper">
-                    <img src="assets/images/creative/creative-2.svg" alt="Neon Cyberpunk Sphere" class="creative-img" width="300" height="300" loading="lazy" decoding="async">
-                  </div>
-                  <div class="creative-meta p-4 flex justify-between items-center">
-                    <div>
-                      <span class="creative-category text-xs fw-semibold text-tertiary">Artwork</span>
-                      <h4 class="creative-title text-sm fw-medium text-primary">Neon Cyberpunk Sphere</h4>
-                    </div>
-                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
-                  </div>
-                </button>
-              </div>
-
-              <!-- Gallery Item 3 -->
-              <div class="creative-item card" data-category="design">
-                <button class="gallery-trigger" aria-label="Lihat Minimal Web Layout Concept">
-                  <div class="creative-img-wrapper">
-                    <img src="assets/images/creative/creative-3.svg" alt="Minimal Web Layout Concept" class="creative-img" width="300" height="200" loading="lazy" decoding="async">
-                  </div>
-                  <div class="creative-meta p-4 flex justify-between items-center">
-                    <div>
-                      <span class="creative-category text-xs fw-semibold text-tertiary">Design</span>
-                      <h4 class="creative-title text-sm fw-medium text-primary">Minimal Web Layout Concept</h4>
-                    </div>
-                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
-                  </div>
-                </button>
-              </div>
-
-              <!-- Gallery Item 4 -->
-              <div class="creative-item card" data-category="experiment">
-                <button class="gallery-trigger" aria-label="Lihat Generative Canvas Wireframe">
-                  <div class="creative-img-wrapper">
-                    <img src="assets/images/creative/creative-4.svg" alt="Generative Canvas Wireframe" class="creative-img" width="300" height="300" loading="lazy" decoding="async">
-                  </div>
-                  <div class="creative-meta p-4 flex justify-between items-center">
-                    <div>
-                      <span class="creative-category text-xs fw-semibold text-tertiary">Eksperimen</span>
-                      <h4 class="creative-title text-sm fw-medium text-primary">Generative Canvas Wireframe</h4>
-                    </div>
-                    <i data-lucide="maximize-2" class="icon-sm text-tertiary" aria-hidden="true"></i>
-                  </div>
-                </button>
-              </div>
-
             </div>
-
           </div>
 
         </div>
@@ -417,7 +290,7 @@
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-secondary">
         <p class="footer-copyright">&copy; 2026 Ibnu Hamdun. All rights reserved.</p>
 
-        <!-- Secondary & Primary Social Badges -->
+        <!-- Secondary Social Badges -->
         <div class="footer-socials flex items-center gap-4">
           <a href="https://myanimelist.net/profile/Hamduncle" target="_blank" rel="noopener noreferrer" class="footer-social-link text-tertiary hover:text-primary transition-colors" title="MyAnimeList Profile" aria-label="MyAnimeList">
             <span>MyAnimeList</span>
@@ -436,7 +309,7 @@
   <div id="about-modal" class="about-modal modal-hidden" role="dialog" aria-modal="true" aria-labelledby="about-title">
     <div class="about-modal-overlay" id="about-overlay"></div>
     <div class="about-modal-container">
-      <button class="about-modal-close" id="about-close" aria-label="Tutup Tentang Saya">&times;</button>
+      <button class="about-modal-close" id="about-close" aria-label="Close About Modal">&times;</button>
       <div class="about-modal-body">
         <div class="about-header flex items-center gap-4 mb-6">
           <img src="assets/images/profile/avatar.svg" alt="Ibnu Hamdun Profile" class="about-avatar" width="64" height="64" decoding="async">
@@ -447,17 +320,15 @@
         </div>
         <div class="about-bio text-sm text-secondary flex flex-col gap-4">
           <p>
-            Saya adalah seorang mahasiswa <strong>Sistem Informasi</strong> yang memiliki minat mendalam pada rekayasa antarmuka web modern, arsitektur data ringan, dan desain visual yang bersih.
+            Tech Enthusiast &amp; Visual Creator. Living at the intersection of technology and visual storytelling—spending my days diving into software architecture and my nights sketching or exploring history.
           </p>
-          <p>
-            Di luar pengembangan perangkat lunak, saya secara aktif mendalami sketsa digital & tradisional, mengurasi musik, serta menikmati video esai bertema sejarah dan alam.
-          </p>
-          <div class="about-tags flex flex-wrap gap-2 mt-2">
-            <span class="pill">Sistem Informasi</span>
-            <span class="pill">Frontend Eng</span>
-            <span class="pill">Visual Design</span>
-            <span class="pill">Digital & Traditional Sketch</span>
-            <span class="pill">Music & History Essays</span>
+          <div class="daily-tools-section pt-3 border-t border-solid border-border">
+            <span class="text-xs fw-semibold text-tertiary uppercase tracking-wider block mb-2">Daily Tools</span>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="pill">Clip Studio Paint</span>
+              <span class="pill">Google Workspace</span>
+              <span class="pill">Microsoft Office Suite</span>
+            </div>
           </div>
         </div>
       </div>
