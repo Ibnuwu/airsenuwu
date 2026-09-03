@@ -54,40 +54,62 @@
       <!-- Section: Hero -->
       <section id="hero" class="w-full fade-in delay-1">
         
-        <!-- Avatar Wrapper -->
+        <!-- Avatar Wrapper with Info Icon Trigger -->
         <div class="hero-avatar-wrapper fade-in delay-1">
           <img id="profile-avatar" src="assets/images/profile/avatar.svg" alt="Ibnu Hamdun Profile Picture" class="hero-avatar" width="104" height="104" decoding="async">
+          <button id="about-trigger" class="info-trigger-btn" aria-label="Informasi Lengkap tentang Ibnu Hamdun" title="Tentang airseen1">
+            <i data-lucide="info" class="icon-sm" aria-hidden="true"></i>
+          </button>
         </div>
 
         <!-- Heading Group -->
-        <div class="hero-meta mb-4 fade-in delay-2">
-          <h1 id="profile-name" class="mb-1">Ibnu Hamdun</h1>
-          <span id="profile-nickname" class="hero-nickname">ibnuwu</span>
+        <div class="hero-meta mb-3 fade-in delay-2">
+          <div class="flex items-center justify-center gap-2 mb-1">
+            <h1 id="profile-name">Ibnu Hamdun</h1>
+          </div>
+          <span id="profile-nickname" class="hero-nickname">airseen1 &bull; ibnuwu</span>
         </div>
 
+        <!-- Tagline & Intro -->
+        <p class="hero-intro text-sm text-secondary mb-4 fade-in delay-2" style="max-width: 440px; margin-inline: auto;">
+          Mahasiswa Sistem Informasi, Frontend Engineer & Visual Creative. Membangun antarmuka web yang bersih, cepat, dan terfokus.
+        </p>
+
         <!-- Quote / Bio -->
-        <blockquote class="hero-quote fade-in delay-2">
+        <blockquote class="hero-quote fade-in delay-2 mb-6">
           <p id="profile-quote">"I got loyalty, got royalty inside my DNA"</p>
           <cite id="profile-quote-source">— Kendrick Lamar, DNA.</cite>
         </blockquote>
 
-        <!-- Social Media Icons Row (Instagram, GitHub, Spotify, Email) -->
-        <div class="hero-socials fade-in delay-3">
-          <a href="https://www.instagram.com/airseen1?igsh=MWx2OWZ6ajFoNWZ3YQ==" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile" title="Instagram" id="social-instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>
+        <!-- Primary Call To Actions -->
+        <div class="hero-actions flex justify-center gap-3 mb-6 fade-in delay-3">
+          <a href="#content-nav" id="cta-projects" class="btn btn-primary btn-hero">
+            <i data-lucide="layout-grid" class="icon-sm" aria-hidden="true"></i>
+            <span>View Projects</span>
           </a>
+          <a href="mailto:zxhamdun2@gmail.com" class="btn btn-outline btn-hero">
+            <i data-lucide="mail" class="icon-sm" aria-hidden="true"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+
+        <!-- Social Media Icons Row (Primary Socials) -->
+        <div class="hero-socials fade-in delay-3">
           <a href="https://github.com/Ibnuwu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub" id="social-github">
             <i class="fa-brands fa-github" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span>
           </a>
-          <a href="https://open.spotify.com/user/31ddwjupym4fqk5mhjflhzueko7q?si=3dd975516f6b4688" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Spotify Profile" title="Spotify" id="social-spotify">
-            <i class="fa-brands fa-spotify" aria-hidden="true"></i>
-            <span class="sr-only">Spotify</span>
+          <a href="https://www.instagram.com/airseen1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile" title="Instagram" id="social-instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
           </a>
-          <a href="mailto:ibnuhandjn@gmail.com" class="social-link" aria-label="Kirim Email" title="Email" id="social-email">
+          <a href="mailto:zxhamdun2@gmail.com" class="social-link" aria-label="Email airseen1" title="Email" id="social-email">
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <span class="sr-only">Email</span>
+          </a>
+          <a href="https://open.spotify.com/user/31ddwjupym4fqk5mhjflhzueko7q" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Spotify Profile" title="Spotify" id="social-spotify">
+            <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+            <span class="sr-only">Spotify</span>
           </a>
         </div>
 
@@ -98,13 +120,13 @@
         <div class="tabs-container fade-in delay-4" role="tablist" aria-label="Portfolio Sections">
           <div class="tabs-wrapper flex justify-center">
             <button class="tab-btn active" data-tab="projects" aria-selected="true" role="tab" id="tab-projects" aria-controls="panel-projects">
-              Projects
+              PROJECTS
             </button>
             <button class="tab-btn" data-tab="blog" aria-selected="false" role="tab" id="tab-blog" aria-controls="panel-blog">
-              Cerpen
+              BLOG
             </button>
             <button class="tab-btn" data-tab="creative" aria-selected="false" role="tab" id="tab-creative" aria-controls="panel-creative">
-              Creative
+              CREATIVE
             </button>
           </div>
         </div>
@@ -391,10 +413,55 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer-container fade-in delay-5" id="main-footer">
-      <p class="footer-copyright">&copy; 2026 ibnuwu. Dibuat dengan hati.</p>
+    <footer class="footer-container py-8 border-t border-solid border-border mt-12 fade-in delay-5" id="main-footer">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-secondary">
+        <p class="footer-copyright">&copy; 2026 Ibnu Hamdun. All rights reserved.</p>
+
+        <!-- Secondary & Primary Social Badges -->
+        <div class="footer-socials flex items-center gap-4">
+          <a href="https://myanimelist.net/profile/Hamduncle" target="_blank" rel="noopener noreferrer" class="footer-social-link text-tertiary hover:text-primary transition-colors" title="MyAnimeList Profile" aria-label="MyAnimeList">
+            <span>MyAnimeList</span>
+          </a>
+          <span class="text-tertiary">&bull;</span>
+          <a href="https://letterboxd.com/Ibnduch/" target="_blank" rel="noopener noreferrer" class="footer-social-link text-tertiary hover:text-primary transition-colors" title="Letterboxd Profile" aria-label="Letterboxd">
+            <span>Letterboxd</span>
+          </a>
+        </div>
+      </div>
     </footer>
 
+  </div>
+
+  <!-- Hidden About Experience Modal / Bottom Sheet -->
+  <div id="about-modal" class="about-modal modal-hidden" role="dialog" aria-modal="true" aria-labelledby="about-title">
+    <div class="about-modal-overlay" id="about-overlay"></div>
+    <div class="about-modal-container">
+      <button class="about-modal-close" id="about-close" aria-label="Tutup Tentang Saya">&times;</button>
+      <div class="about-modal-body">
+        <div class="about-header flex items-center gap-4 mb-6">
+          <img src="assets/images/profile/avatar.svg" alt="Ibnu Hamdun Profile" class="about-avatar" width="64" height="64" decoding="async">
+          <div>
+            <h2 id="about-title" class="text-lg fw-bold text-primary mb-1">Ibnu Hamdun</h2>
+            <span class="text-xs text-tertiary">airseen1 &bull; ibnuwu</span>
+          </div>
+        </div>
+        <div class="about-bio text-sm text-secondary flex flex-col gap-4">
+          <p>
+            Saya adalah seorang mahasiswa <strong>Sistem Informasi</strong> yang memiliki minat mendalam pada rekayasa antarmuka web modern, arsitektur data ringan, dan desain visual yang bersih.
+          </p>
+          <p>
+            Di luar pengembangan perangkat lunak, saya secara aktif mendalami sketsa digital & tradisional, mengurasi musik, serta menikmati video esai bertema sejarah dan alam.
+          </p>
+          <div class="about-tags flex flex-wrap gap-2 mt-2">
+            <span class="pill">Sistem Informasi</span>
+            <span class="pill">Frontend Eng</span>
+            <span class="pill">Visual Design</span>
+            <span class="pill">Digital & Traditional Sketch</span>
+            <span class="pill">Music & History Essays</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Lightbox Modal -->

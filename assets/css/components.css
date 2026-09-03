@@ -19,6 +19,8 @@
 }
 
 .hero-avatar {
+  width: 104px;
+  height: 104px;
   border-radius: var(--radius-full);
   border: 1px solid var(--border);
   background-color: var(--bg-secondary);
@@ -28,8 +30,162 @@
 }
 
 .hero-avatar-wrapper:hover .hero-avatar {
-  border-color: var(--text-secondary);
-  transform: scale(1.04);
+  border-color: var(--border-hover);
+  transform: scale(1.03);
+}
+
+/* Info Icon Trigger on Hero Avatar */
+.info-trigger-btn {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.info-trigger-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background-color: var(--bg-secondary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-hero {
+  min-height: 42px;
+  padding-inline: var(--space-5);
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: 1px solid var(--text-primary);
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-outline:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-card);
+  transform: translateY(-1px);
+}
+
+/* --- Hidden About Modal / Mobile Bottom Sheet --- */
+.about-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+@media (min-width: 640px) {
+  .about-modal {
+    align-items: center;
+  }
+}
+
+.about-modal.modal-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.about-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-overlay);
+}
+
+.about-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding: var(--space-6);
+  z-index: 2110;
+  max-height: 85vh;
+  overflow-y: auto;
+  transform: translateY(0);
+  transition: transform var(--transition-normal);
+}
+
+@media (min-width: 640px) {
+  .about-modal-container {
+    border-radius: var(--radius-xl);
+    margin-inline: var(--space-4);
+  }
+}
+
+.about-modal.modal-hidden .about-modal-container {
+  transform: translateY(20px);
+}
+
+.about-modal-close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.about-modal-close:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.about-avatar {
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  object-fit: cover;
 }
 
 .hero-meta {

@@ -2,48 +2,53 @@ backend:
   name: github
   repo: Ibnuwu/airsenuwu
   branch: main
+  auth_type: pkce
+  app_id: Ov23li7LILadx8NEOppL
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  # --- Site Settings (Single File) ---
-  - name: "settings"
-    label: "⚙️ Pengaturan Situs"
-    files:
-      - name: "profile"
-        label: "Profil & Identitas"
-        file: "content/settings/profile.json"
-        fields:
-          - {label: "Foto Profil", name: "avatar", widget: "image", hint: "Upload foto profil (disarankan 1:1, min 200x200px)"}
-          - {label: "Nama Utama", name: "name", widget: "string", default: "Ibnu Hamdun", hint: "Nama yang ditampilkan di header utama"}
-          - {label: "Nickname", name: "nickname", widget: "string", default: "ibnuwu", hint: "Username/nickname yang muncul di bawah nama"}
-          - {label: "Kutipan / Quote", name: "quote", widget: "string", default: "I got loyalty, got royalty inside my DNA", hint: "Kutipan/lirik yang ditampilkan di bio"}
-          - {label: "Quote Attribution", name: "quote_source", widget: "string", default: "Kendrick Lamar — DNA.", required: false, hint: "Sumber kutipan (artis, lagu, dll)"}
-
   # --- Projects ---
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
     create: true
     slug: "{{slug}}"
+    media_folder: "assets/images/projects"
+    public_folder: "/assets/images/projects"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Featured Flag", name: "featured", widget: "boolean", default: false}
+      - {label: "Featured Image / Thumbnail", name: "thumbnail", widget: "image", required: false}
       - {label: "Category", name: "category", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Short Description", name: "description", widget: "text"}
+      - {label: "Full Description / Body", name: "body", widget: "markdown", required: false}
+      - {label: "Tech Stack", name: "tech", widget: "string", hint: "Comma separated tags"}
+      - {label: "Demo URL", name: "demo", widget: "string", required: false}
+      - {label: "GitHub URL", name: "repo", widget: "string", required: false}
+      - {label: "Status", name: "status", widget: "select", options: ["Featured", "Completed", "Active", "In Progress"], default: "Completed"}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
 
-  # --- Cerpen / Blog ---
+  # --- Blog ---
   - name: "blog"
-    label: "Cerpen / Blog"
+    label: "Blog"
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
+    media_folder: "assets/images/blog"
+    public_folder: "/assets/images/blog"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Content / Body", name: "body", widget: "markdown"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string", required: false, hint: "Comma separated"}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Read Time", name: "read_time", widget: "string", required: false}
 
   # --- Creative Work ---
   - name: "creative"
@@ -51,8 +56,13 @@ collections:
     folder: "content/creative"
     create: true
     slug: "{{slug}}"
+    media_folder: "assets/images/creative"
+    public_folder: "/assets/images/creative"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Category", name: "category", widget: "select", options: ["photography", "artwork", "design", "experiment"]}
-      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Category", name: "category", widget: "select", options: ["digital sketch", "sketchbook scan", "design asset", "photography", "experiment"]}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
+      - {label: "External Link", name: "external_link", widget: "string", required: false}

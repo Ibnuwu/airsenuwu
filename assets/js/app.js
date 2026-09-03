@@ -69,28 +69,7 @@ ZenReader is an RSS client designed to remove the noise of the modern internet. 
 - **Instant Offline Mode**: Pre-caches feeds and content for continuous, offline-first reading.
 - **Customizable Typography**: Elegant fonts and fluid line-widths to reduce eye strain.`
     }
-  ],
-  blog: [
-    {
-      slug: 'misteri-jam-dinding-tua',
-      title: 'Misteri Jam Dinding Tua',
-      category: 'Cerpen',
-      date: '2026-06-14T00:00:00.000Z',
-      excerpt: 'Setiap malam jam itu berdentang tepat pada pukul 12, membawa kenangan aneh dari masa lalu yang tak pernah terjadi...',
-      body: `### Misteri Jam Dinding Tua
-
-Suara detak jam itu bagaikan ketukan jemari tipis di atas kaca meja belajar. Setiap pukul dua belas malam, ia selalu berdentang dengan nada yang serak dan berat, seperti orang tua yang menghela napas panjang.
-
-Rendra baru menempati paviliun tua ini selama seminggu. Jam kuno berbahan kayu jati hitam itu sudah tergantung di sana sejak ia pertama kali masuk. Pemilik paviliun, seorang wanita paruh baya dengan tatapan sayu, hanya berpesan singkat: *"Jangan pernah memutar jarum jam itu ke belakang."*
-
-Malam ini, hawa dingin terasa menusuk kulit lebih tajam dari biasanya. Ketika jarum jam berhimpit tegak lurus di angka dua belas, dentang pertama menggema. Nada bergetar aneh. Rendra meletakkan cangkir kopinya. Di luar jendela yang buram, kabut melayang lambat.
-
-Pada dentang ketiga, Rendra mendengar sesuatu yang mustahil. Bukan suara roda gigi, melainkan bisikan lembut. Bisikan seorang anak kecil yang mengeja nama ibunya. Di dinding, bayangan jam itu memanjang, meliuk seperti jemari yang meraih cermin di dekatnya.
-
-Ia mendekati jam itu. Kayunya terasa hangat saat disentuh. Saat ia menatap jarum emasnya yang berkarat, ia melihat pemandangan aneh terpantul di kaca pelindungnya. Bukan kamar kosnya yang berantakan, melainkan sebuah ruang tamu bergaya kolonial, lengkap dengan lampu gantung kristal dan seorang wanita bergaun putih yang menatapnya balik dengan senyum membeku.
-
-Detik berikutnya, jam berhenti berdetak. Hening total. Dan wanita di dalam cermin itu berbisik, *"Kamu akhirnya pulang..."*`
-    },
+  ],  blog: [
     {
       slug: 'membangun-design-system-minimalis',
       title: 'Membangun Design System Minimalis dengan CSS Custom Properties',
@@ -99,12 +78,12 @@ Detik berikutnya, jam berhenti berdetak. Hening total. Dan wanita di dalam cermi
       excerpt: 'Panduan praktis merancang warna, tipografi, dan grid tokens yang tangguh, clean, dan mudah dipelihara menggunakan native CSS.',
       body: `### Membangun Design System Minimalis dengan CSS Custom Properties
 
-Dalam pengembangan web modern, banyak developer langsung memilih Tailwind CSS atau framework UI lainnya. Namun, untuk proyek berukuran kecil hingga menengah, kita bisa membangun **design system** yang sangat ringan, performan, dan mudah dipelihara hanya dengan native CSS Custom Properties (Variabel CSS).
+Dalam pengembangan web modern, banyak developer langsung memilih Tailwind CSS atau framework UI lainnya. Namun, untuk proyek berukuran kecil hingga menengah, kita bisa membangun **design system** yang sangat ringan, performan, dan mudah dipelihara hanya dengan native CSS Custom Properties.
 
 #### 1. Mengapa Native CSS?
 
 - **Zero Overhead**: Tidak memerlukan build-step atau pemrosesan compiler tambahan.
-- **Dynamic**: Nilai variabel bisa diubah langsung via JavaScript secara real-time (sangat berguna untuk fitur Dark Mode).
+- **Dynamic**: Nilai variabel bisa diubah langsung via JavaScript secara real-time.
 - **Clean HTML**: Kode HTML bersih dari class utilitas yang menumpuk.
 
 #### 2. Mendefinisikan Tokens di \`:root\`
@@ -115,32 +94,14 @@ Langkah pertama adalah membuat file \`variables.css\` dan menaruh semua nilai da
 :root {
   /* Colors */
   --bg-primary: #0a0a0a;
-  --text-primary: #ffffff;
-  --accent: #6366f1;
-
-  /* Typography */
-  --font-sans: "Inter", sans-serif;
-  --fs-base: 1rem;
-  --fs-lg: 1.25rem;
-  
-  /* Spacing */
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
+  --bg-card: #171717;
+  --border: #262626;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a3a3a3;
 }
 \`\`\`
 
-#### 3. Membuat Utility Classes Sederhana
-
-Setelah mendefinisikan variabel dasar, buatlah class utilitas sederhana untuk tata letak umum seperti Flexbox dan spacing:
-
-\`\`\`css
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.gap-md { gap: var(--space-md); }
-.p-md { padding: var(--space-md); }
-\`\`\`
-
-Dengan pendekatan ini, Anda akan memiliki kontrol penuh atas visual situs Anda dengan ukuran file CSS kurang dari 10KB!`
+Dengan pendekatan ini, Anda akan memiliki kontrol penuh atas visual situs Anda!`
     },
     {
       slug: 'review-buku-quiet',
@@ -150,23 +111,29 @@ Dengan pendekatan ini, Anda akan memiliki kontrol penuh atas visual situs Anda d
       excerpt: 'Catatan kritis dan ulasan mendalam mengenai karya Susan Cain tentang bagaimana kontribusi kaum tenang sering kali diremehkan.',
       body: `### Review Buku: Quiet — Kekuatan Introvert di Dunia yang Berisik
 
-Dalam buku *Quiet: The Power of Introverts in a World That Can't Stop Talking*, Susan Cain menyoroti bias kultural masyarakat modern yang sangat memuja kepribadian ekstrovert—apa yang ia sebut sebagai *"Extrovert Ideal"*.
+Dalam buku *Quiet: The Power of Introverts in a World That Can't Stop Talking*, Susan Cain menyoroti bias kultural masyarakat modern yang sangat memuja kepribadian ekstrovert.
 
 #### Inti Argumen Buku
 
-Cain menjelaskan bagaimana struktur sosial kita, mulai dari ruang kelas yang didesain berkelompok hingga kantor berkonsep *open-plan*, dirancang untuk menguntungkan mereka yang bersuara lantang. Padahal, banyak penemuan terbesar umat manusia lahir dari kesendirian dan perenungan mendalam.
+Cain menjelaskan bagaimana struktur sosial kita dirancang untuk menguntungkan mereka yang bersuara lantang. Padahal, banyak penemuan terbesar umat manusia lahir dari kesendirian dan perenungan mendalam.`
+    },
+    {
+      slug: 'optimasi-performa-web-static',
+      title: 'Optimasi Performa Web Static di GitHub Pages',
+      category: 'Technical Note',
+      date: '2026-03-01T00:00:00.000Z',
+      excerpt: 'Teknik optimasi asset, zero-dependency scripting, dan caching strategi untuk mencapai skor Lighthouse 95+.',
+      body: `### Optimasi Performa Web Static di GitHub Pages
 
-#### Analisis Karakteristik Introvert
+Merancang website berkecepatan tinggi pada GitHub Pages membutuhkan disiplin dalam penyajian asset dan eksekusi script.
 
-Buku ini didukung oleh penelitian ilmiah di bidang neurosains dan psikologi sosial:
+#### Strategi Utama
 
-1. **Sensitivitas Stimulus**: Introvert memiliki sistem saraf yang lebih responsif terhadap stimulasi luar, sehingga mereka membutuhkan waktu tenang (*recharge*) setelah bersosialisasi.
-2. **Gaya Kepemimpinan**: Pemimpin introvert cenderung mendengarkan ide karyawan dengan lebih baik dan membiarkan anggota tim yang proaktif untuk berkembang secara mandiri.
-
-#### Kesimpulan
-
-*Quiet* bukan sekadar pembelaan bagi kaum introvert, melainkan sebuah seruan penting agar dunia menciptakan ruang yang lebih seimbang. Buku yang sangat direkomendasikan bagi siapa saja yang ingin memahami dinamika kepribadian manusia secara lebih inklusif.`
+1. **Lightweight HTML & Vanilla JS**: Menghindari framework JavaScript berat.
+2. **SVG & WebP Images**: Menggunakan format vektor SVG atau WebP terkompresi.
+3. **Decap CMS Direct Fetching**: Mengambil data konten markdown secara asynchronous.`
     }
+  ], }
   ],
   creative: [
     {
@@ -884,6 +851,36 @@ function applyProfileSettings(profile) {
   if (quoteSourceEl && profile.quote_source) quoteSourceEl.textContent = `— ${profile.quote_source}`;
 }
 
+// --- Setup Hidden About Modal / Bottom Sheet ---
+function setupAboutModal() {
+  const aboutTrigger = document.getElementById('about-trigger');
+  const aboutModal = document.getElementById('about-modal');
+  const aboutOverlay = document.getElementById('about-overlay');
+  const aboutClose = document.getElementById('about-close');
+
+  if (!aboutModal) return;
+
+  const openAboutModal = () => {
+    aboutModal.classList.remove('modal-hidden');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeAboutModal = () => {
+    aboutModal.classList.add('modal-hidden');
+    document.body.style.overflow = '';
+  };
+
+  aboutTrigger?.addEventListener('click', openAboutModal);
+  aboutClose?.addEventListener('click', closeAboutModal);
+  aboutOverlay?.addEventListener('click', closeAboutModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !aboutModal.classList.contains('modal-hidden')) {
+      closeAboutModal();
+    }
+  });
+}
+
 // --- Run Application ---
 document.addEventListener('DOMContentLoaded', () => {
   console.log('ibnuwu portfolio initialized');
@@ -903,6 +900,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContent();
 
   // Setup modals
+  setupAboutModal();
   setupReaderModal();
   setupLightbox();
 });
