@@ -13,14 +13,14 @@ const FALLBACK_DATA = {
       title: 'airsenuwu',
       thumbnail: 'assets/images/projects/project-featured.svg',
       category: 'Portfolio Web & Workspace',
-      description: 'Dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.',
+      description: 'Built with a mobile-first approach using pure HTML, CSS, and JavaScript. Integrated with Decap CMS for seamless content management.',
       status: 'Featured',
       tech: 'HTML5, CSS3, JavaScript, Decap CMS',
       repo: 'https://github.com/Ibnuwu/airsenuwu',
       demo: 'https://airsenuwu.is-a.dev',
       body: `### airsenuwu
 
-Dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.`
+Built with a mobile-first approach using pure HTML, CSS, and JavaScript. Integrated with Decap CMS for seamless content management.`
     }
   ],
   blog: [],

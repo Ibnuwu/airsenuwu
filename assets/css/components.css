@@ -39,8 +39,8 @@
   position: absolute;
   bottom: 2px;
   right: 2px;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--radius-full);
   background-color: var(--bg-card);
   border: 1px solid var(--border);
@@ -49,40 +49,69 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 1.15rem;
-  line-height: 1;
   transition: all var(--transition-fast);
   box-shadow: var(--shadow-sm);
+  box-sizing: border-box;
 }
 
 .info-trigger-btn:hover {
   border-color: var(--border-hover);
   background-color: var(--bg-elevated);
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
-/* Touch-Target Block Buttons for Social Links (Min height 48px) */
-.social-touch-btn {
+.info-trigger-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--text-primary);
+}
+
+/* Minimalist Icon Dock (Min 48px Touch Targets) */
+.icon-dock {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.dock-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
   min-height: 48px;
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   background-color: var(--bg-card);
   border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 1.15rem;
   text-decoration: none;
-  transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
-.social-touch-btn:hover {
+.dock-icon-btn:hover {
+  color: var(--text-primary);
   border-color: var(--border-hover);
   background-color: var(--bg-elevated);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
-.social-touch-btn:active {
+.dock-icon-btn:active {
   transform: translateY(0);
+}
+
+.dock-icon-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.75px;
 }
 
 /* Buttons */
