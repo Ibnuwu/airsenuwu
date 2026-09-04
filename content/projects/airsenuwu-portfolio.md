@@ -2,7 +2,7 @@
 title: Airsenuwu Portfolio
 thumbnail: /assets/images/projects/project-featured.svg
 category: Portfolio Web
-description: Website portfolio pribadi modern, minimalis, dan sangat cepat yang dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.
+description: Website portfolio pribadi dibangun dengan pendekatan mobile-first dan pure HTML/CSS/JS. Terintegrasi dengan Decap CMS untuk kemudahan pemeliharaan konten.
 status: Featured
 tech: HTML5, CSS3, JavaScript, Decap CMS
 repo: https://github.com/Ibnuwu/airsenuwu
